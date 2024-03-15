@@ -1,5 +1,5 @@
 /* MOBILE STYLE */
-/* .visually-hidden {
+ .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -10,16 +10,13 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-} */
-.mobile-menu.is-open {
-    transform: translateX(0%);
-}
+} 
 
 .main-page{
     padding-top: 32px;
     /* position: absolute; */
     background: inherit;
-}
+} 
 .header-container{
     display: flex;
     flex-direction: row;
@@ -56,8 +53,9 @@ left:0;
 width: 100%;
 height: 100%;
 z-index: 999999999;
+transform: translateX(0%);
 background: linear-gradient(90.00deg, rgb(28, 29, 32) 49.712%, rgb(0, 25, 88) 67.655%, rgb(0, 65, 232) 99.721%);
- transition: transform 250ms linear;
+transition: transform 250ms linear;
 }
 
 .mobile-menu-list{
@@ -179,13 +177,28 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             border-radius: 60px;
             background-color: rgb(0, 65, 232);
             color: rgb(250, 250, 250);
-                font-family: Inter Tight;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 1.19;
-                letter-spacing: -2%;
-                text-align: center;
+            font-family: Inter Tight;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.19;
+            letter-spacing: -2%;
+            text-align: center;
         }
+                .menu-list {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background-color: #fff;
+                    z-index: 1000;
+                }
+        
+                .menu-list.active {
+                    display: block;
+                    background-color: inherit;
+                }
 
 }
 /****************************** Desktop Style******************/

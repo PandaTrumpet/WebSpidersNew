@@ -1,0 +1,343 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.about {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    margin-bottom: 96px;
+  }
+}
+
+.about .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .about .container {
+    min-width: 375px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about .container {
+    min-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about .container {
+    min-width: 1440px;
+  }
+}
+
+.about-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-top {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-top {
+    flex-direction: row;
+    margin-bottom: 96px;
+  }
+}
+.about-top-content {
+  width: 100%;
+  border-radius: 24px;
+  background: #242527;
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-left: 32px;
+  height: 500px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-top-content {
+    height: 700px;
+    padding-top: 64px;
+    padding-left: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-top-content {
+    /* width: calc((100% - 16px) / 2); */
+    width: 680px;
+  }
+}
+
+.about-top-text {
+  width: 279px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .about-top-text {
+    width: 576px;
+    font-size: 38px;
+    line-height: 105%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-top-text {
+    width: 552px;
+    font-size: 38px;
+  }
+}
+
+.about-top-text-blue {
+  color: #0041e8;
+}
+
+.about-top-text-grey {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-top-image {
+  border-radius: 24px;
+  height: 500px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .about-top-image {
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-top-image {
+    /* width: calc((100% - 16px) / 2); */
+    width: 680px;
+  }
+}
+.about-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.about-info-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-info-list {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+}
+
+.about-info-list-item {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+@media screen and (min-width: 1440px) {
+  .about-info-list-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.about-info-list-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-info-list-item-top {
+    margin-bottom: 8px;
+  }
+}
+
+.about-info-list-item-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-info-list-item-btn {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  line-height: 0;
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-info-list-item-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.about-info-list-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.about-info-list-item:first-child .about-info-list-item-text {
+  gap: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-info-list-item-text {
+    gap: 12px;
+  }
+
+  .about-info-list-item:first-child .about-info-list-item-text {
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-info-list-item-text {
+    width: 612px;
+    padding-right: 68px;
+    gap: 10px;
+    align-self: flex-end;
+  }
+
+  .about-info-list-item:first-child .about-info-list-item-text {
+    gap: 32px;
+  }
+}
+.about-info-list-item-text-unit {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+@media screen and (min-width: 1440px) {
+  .about-info-list-item:last-child .about-info-list-item-text-unit {
+    width: 445px;
+  }
+}
+
+.about-skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-skills-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-skills-list-item {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-skills-list-item.active {
+  border: none;
+  background-color: #0041e8;
+}
+
+@media screen and (min-width: 768px) {
+  .about-skills-list-item {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.about-skills-list-item-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.about-skills-arrow {
+  margin-right: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  line-height: 0;
+  width: 28px;
+  height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-skills-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}

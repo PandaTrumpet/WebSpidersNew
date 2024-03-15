@@ -1,0 +1,128 @@
+.benefits_section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.benefits_title {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
+.icon_container {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #0041e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+.benefits_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.benefits_item {
+  padding: 24px;
+  border-radius: 20px;
+  background-color: #242527;
+  width: 344px;
+}
+.benefits_items_title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.benefits_information {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(250, 250, 250, 0.6);
+  letter-spacing: -0.02em;
+  max-width: 296px;
+}
+.benefits_btn_link {
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+.benefits_btn {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px 36px;
+  width: 187px;
+  background-color: #1c1d20;
+  margin-top: 32px;
+  transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.benefits_btn:hover {
+  transform: scale(1.1);
+  background-color: #242527;
+}
+
+/* ===================================================TABLET-STYLES======================================================= */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .benefits_section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .benefits_btn {
+    margin-top: 64px;
+  }
+
+  .benefits_menu {
+    width: 704px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 16px;
+  }
+  .benefits_item {
+    width: 344px;
+  }
+}
+
+/* ===================================================TABLET-STYLES======================================================= */
+
+/* =====================================================DESKTOP-STYLES===================================================== */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1376px;
+  }
+
+  .benefits_section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+  .benefits_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .benefits_title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+  }
+}
+
+/* =====================================================DESKTOP-STYLES===================================================== */

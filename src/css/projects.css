@@ -1,0 +1,215 @@
+@media screen and (max-width: 767px) {
+.swiper-wrapper {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.about-projects {
+        color: black;
+        border-radius: 24px 24px 0 0;
+    }
+
+    .list-skills {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 96px;
+        padding-top: 32px;
+        padding-left: 32px;
+        column-gap: 6px;
+        row-gap: 6px;
+        max-width: 279px;
+    }
+
+    .skill {
+        padding: 13px 18px;
+        border: 1px solid rgba(28, 29, 32, 0.2);
+        border-radius: 60px;
+    }
+
+    .text-skills {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: #1c1d20;
+    }
+
+    .text-card {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        width: 279px;
+        line-height: 28px;
+        line-height: 1;
+        letter-spacing: -0.03em;
+        color: #1c1d20;
+        margin-bottom: 32px;
+        margin-left: 32px;
+    }
+
+    .cont-btn {
+        padding-bottom: 64px;
+        margin-left: 32px;
+    }
+
+    .button-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        border-radius: 60px;
+        border: 1px solid #ed3b44;
+        width: 141px;
+        height: 55px;
+        background: #ed3b44;
+    }
+
+    .text-button {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: #fafafa;
+        padding: 15px;
+    }
+
+    .img-cont {
+        border-radius: 0 0 24px 24px;
+        width: 704px;
+        background: #242527;
+    }
+
+    .img-first {
+        padding: 120px 45px;
+    }
+
+
+}
+
+
+
+
+/* СТИЛІ ТАБЛЕТКА */
+@media screen and (min-width: 768px) {
+.swiper-wrapper{
+    max-width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 24px;
+    
+}
+
+
+.about-projects {
+color: black;
+border-radius: 24px 24px 0 0;
+}
+.list-skills {
+    display: flex;
+    margin-bottom: 164px;
+    padding-top: 64px;
+    padding-left: 64px;
+    column-gap: 6px;
+}
+.skill {
+    padding: 18px;
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    border-radius: 60px;
+}
+
+.text-skills {
+    font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: #1c1d20;
+}
+
+.text-card {
+    font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 44px;
+        width: 494px;
+    line-height: 44px; 
+        line-height: 1;
+        letter-spacing: -0.03em;
+        color: #1c1d20;
+        margin-bottom: 32px;
+        margin-left: 64px;
+}
+
+.cont-btn {
+    padding-bottom: 64px;
+    margin-left: 64px;
+}
+.button-card {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+border-radius: 60px;
+border: 1px solid #ed3b44;
+    width: 177px;
+    height: 55px;
+    background: #ed3b44;
+}
+
+.text-button {
+    font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: #fafafa;
+        padding: 15px;
+}
+
+.img-cont {
+border-radius: 0 0 24px 24px;
+    width: 704px;
+    background: #242527;
+}
+.img-first {
+    padding: 120px 45px;
+}
+
+}
+
+/* СТИЛІ ДЕСКТОП */
+@media screen and (min-width: 1440px) {
+    .swiper-wrapper {
+max-width: 1376px;
+padding-left: 32px;
+    padding-right: 32px;
+    margin: auto;
+    }
+
+    .about-projects {
+        max-width: 688px;
+        border-radius: 24px 0 0 24px;
+    }
+
+.swiper-slide-first {
+    display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+}
+
+.img-cont {
+    border-radius: 0 24px 24px 0;
+    max-width: 688px;
+}
+.img-first {
+    padding: 120px 37px;
+}
+
+}
+
+
+
+
+.about-projects {
+    background-color: #FAFAFA;
+}

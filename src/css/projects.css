@@ -272,3 +272,7 @@ padding-left: 32px;
 .about-projects {
     background-color: #FAFAFA;
 }
+
+.list-items {
+    list-style: none;
+}

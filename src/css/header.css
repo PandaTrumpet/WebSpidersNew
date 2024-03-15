@@ -1,5 +1,5 @@
 /* MOBILE STYLE */
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -10,7 +10,7 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
 .mobile-menu.is-open {
     transform: translateX(0%);
 }
@@ -188,6 +188,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
 }
+/****************************** Desktop Style******************/
 @media screen and (min-width: 1440px) {
     .container {
         max-width: 1376px;
@@ -195,5 +196,4 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .menu-button{
     margin: 0 487px;
 }
-
 }

@@ -8,19 +8,8 @@
 
 .about {
   width: 100%;
+  margin-top: 64px;
   margin-bottom: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .about {
-    margin-bottom: 64px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .about {
-    margin-bottom: 96px;
-  }
 }
 
 .about .container {
@@ -34,28 +23,6 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 375px) {
-  .about .container {
-    min-width: 375px;
-    padding-right: 16px;
-    padding-left: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .about .container {
-    min-width: 768px;
-    padding-right: 32px;
-    padding-left: 32px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .about .container {
-    min-width: 1440px;
-  }
-}
-
 .about-top {
   display: flex;
   flex-direction: column;
@@ -65,18 +32,6 @@
   margin-bottom: 32px;
 }
 
-@media screen and (min-width: 768px) {
-  .about-top {
-    margin-bottom: 64px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .about-top {
-    flex-direction: row;
-    margin-bottom: 96px;
-  }
-}
 .about-top-content {
   width: 100%;
   border-radius: 24px;
@@ -85,21 +40,6 @@
   padding-right: 32px;
   padding-left: 32px;
   height: 500px;
-}
-
-@media screen and (min-width: 768px) {
-  .about-top-content {
-    height: 700px;
-    padding-top: 64px;
-    padding-left: 64px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .about-top-content {
-    /* width: calc((100% - 16px) / 2); */
-    width: 680px;
-  }
 }
 
 .about-top-text {
@@ -111,21 +51,6 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
-}
-
-@media screen and (min-width: 768px) {
-  .about-top-text {
-    width: 576px;
-    font-size: 38px;
-    line-height: 105%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .about-top-text {
-    width: 552px;
-    font-size: 38px;
-  }
 }
 
 .about-top-text-blue {
@@ -143,18 +68,6 @@
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .about-top-image {
-    height: 700px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .about-top-image {
-    /* width: calc((100% - 16px) / 2); */
-    width: 680px;
-  }
-}
 .about-img {
   object-fit: cover;
   width: 100%;
@@ -171,24 +84,10 @@
   margin-bottom: 32px;
 }
 
-@media screen and (min-width: 768px) {
-  .about-info-list {
-    gap: 32px;
-    margin-bottom: 64px;
-  }
-}
-
 .about-info-list-item {
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-}
-
-@media screen and (min-width: 1440px) {
-  .about-info-list-item {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .about-info-list-item-top {
@@ -196,12 +95,6 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 12px;
-}
-
-@media screen and (min-width: 768px) {
-  .about-info-list-item-top {
-    margin-bottom: 8px;
-  }
 }
 
 .about-info-list-item-title {
@@ -240,13 +133,6 @@
   transform: rotate(180deg);
 }
 
-@media screen and (min-width: 768px) {
-  .about-info-list-item-btn {
-    width: 40px;
-    height: 40px;
-  }
-}
-
 .about-info-list-item-content {
   display: none;
 }
@@ -267,28 +153,6 @@
   gap: 32px;
 }
 
-@media screen and (min-width: 768px) {
-  .about-info-list-item-text {
-    gap: 12px;
-  }
-
-  .about-info-list-item:first-child .about-info-list-item-text {
-    gap: 16px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .about-info-list-item-text {
-    width: 612px;
-    padding-right: 68px;
-    gap: 10px;
-    align-self: flex-end;
-  }
-
-  .about-info-list-item:first-child .about-info-list-item-text {
-    gap: 32px;
-  }
-}
 .about-info-list-item-text-unit {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
@@ -296,12 +160,6 @@
   line-height: 150%;
   letter-spacing: -0.02em;
   color: #fafafa;
-}
-
-@media screen and (min-width: 1440px) {
-  .about-info-list-item:last-child .about-info-list-item-text-unit {
-    width: 445px;
-  }
 }
 
 .about-skills {
@@ -339,25 +197,6 @@
   background-color: #0041e8;
 }
 
-@media screen and (min-width: 768px) {
-  .about-skills-list-item {
-    width: 200px;
-    height: 200px;
-  }
-
-  .about-skills-list-item:nth-child(3) {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .about-skills-list-item:nth-child(4),
-  .about-skills-list-item:nth-child(5),
-  .about-skills-list-item:nth-child(6) {
-    display: flex;
-  }
-}
-
 .about-skills-list-item-text {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
@@ -377,9 +216,134 @@
   height: 28px;
 }
 
+@media screen and (min-width: 375px) {
+  .about .container {
+    min-width: 375px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .about {
+    margin-bottom: 64px;
+    margin-top: 64px;
+  }
+
+  .about .container {
+    min-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .about-top {
+    margin-bottom: 64px;
+  }
+
+  .about-top-content {
+    height: 700px;
+    padding-top: 64px;
+    padding-left: 64px;
+  }
+
+  .about-top-text {
+    width: 576px;
+    font-size: 38px;
+    line-height: 105%;
+  }
+
+  .about-top-image {
+    height: 700px;
+  }
+
+  .about-info-list {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+
+  .about-info-list-item-top {
+    margin-bottom: 8px;
+  }
+
+  .about-info-list-item-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-info-list-item-text {
+    gap: 12px;
+    padding-right: 68px;
+  }
+
+  .about-info-list-item:first-child .about-info-list-item-text {
+    gap: 16px;
+  }
+
+  .about-skills-list-item {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-skills-list-item:nth-child(3) {
+    display: flex;
+  }
+
   .about-skills-arrow {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    margin-top: 96px;
+    margin-bottom: 96px;
+  }
+
+  .about .container {
+    min-width: 1440px;
+  }
+
+  .about-top {
+    flex-direction: row;
+    margin-bottom: 96px;
+  }
+
+  .about-top-content {
+    width: 680px;
+  }
+
+  .about-top-text {
+    width: 552px;
+    font-size: 38px;
+  }
+
+  .about-top-image {
+    width: 680px;
+  }
+
+  .about-info-list-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-info-list-item-text {
+    width: 612px;
+    gap: 10px;
+    margin: 0 0 0 auto;
+  }
+
+  .about-info-list-item:first-child .about-info-list-item-text {
+    gap: 32px;
+  }
+
+  .about-info-list-item:last-child .about-info-list-item-text-unit {
+    width: 445px;
+  }
+
+  .about-skills-list-item:nth-child(4),
+  .about-skills-list-item:nth-child(5),
+  .about-skills-list-item:nth-child(6) {
+    display: flex;
   }
 }

@@ -1,8 +1,10 @@
+
 @media screen and (max-width: 767px) {
-.swiper-wrapper {
-    width: 100%;
+.container {
+    max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0 auto;
 }
 
 .about-projects {
@@ -77,12 +79,18 @@
 
     .img-cont {
         border-radius: 0 0 24px 24px;
-        width: 704px;
+        width: 100%;
         background: #242527;
     }
 
     .img-first {
-        padding: 120px 45px;
+        padding: 100px 16px;
+    }
+
+    .list-items {
+    width: 344px;
+    padding-left: 32px;
+    padding-right: 32px;
     }
 
 
@@ -93,7 +101,7 @@
 
 /* СТИЛІ ТАБЛЕТКА */
 @media screen and (min-width: 768px) {
-.swiper-wrapper{
+.container {
     max-width: 704px;
     padding-left: 32px;
     padding-right: 32px;
@@ -179,7 +187,7 @@ border-radius: 0 0 24px 24px;
 
 /* СТИЛІ ДЕСКТОП */
 @media screen and (min-width: 1440px) {
-    .swiper-wrapper {
+    .container {
 max-width: 1376px;
 padding-left: 32px;
     padding-right: 32px;
@@ -195,6 +203,17 @@ padding-left: 32px;
     display: flex;
         justify-content: flex-start;
         flex-direction: row;
+}
+.swiper-slide-second {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.swiper-slide-third {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
 .img-cont {

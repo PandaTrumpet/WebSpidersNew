@@ -12,7 +12,9 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" crossorigin src="/WebSpidersNew/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/WebSpidersNew/assets/index-970693fb.css">
+    <link rel="modulepreload" crossorigin href="/WebSpidersNew/assets/vendor-763ee67d.js">
+    <link rel="stylesheet" href="/WebSpidersNew/assets/vendor-0ded8c46.css">
+    <link rel="stylesheet" href="/WebSpidersNew/assets/index-18311c71.css">
   </head>
   
    
@@ -380,9 +382,32 @@
 <section id="covers">
    
 </section>
-<section id="reviwes">
-   
+<section id="reviews">
+  <div class="container">
+    <h2 class="reviews-title">reviews</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <ul class="swiper-list">
+          <li data-hash="slide" class="swiper-slide"></li>
+        </ul>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="navi">
+        <div class="swiper-button-prev" id="before">
+          <svg class="projects_icon" width="32" height="32">
+            <use href="../img/icon.svg#icon-swiper_right_icon"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next" id="next">
+          <svg width="32" height="32">
+            <use href="../img/icon.svg#icon-swiper_right_icon"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 <section id="footer-work-together">
     <div class="container">
         <div class="footer_main">

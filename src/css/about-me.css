@@ -189,16 +189,12 @@
   margin-right: 55px;
 }
 
-.about-skills-list-item {
+.about-skills-list-item.swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  overflow: hidden;
-}
-
-.about-skills-list-item-text {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -207,9 +203,6 @@
   color: #fafafa;
   width: 130px;
   height: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .about-skills-list-item.active {
@@ -317,7 +310,7 @@
     margin-right: 64px;
   }
 
-  .about-skills-list-item-text {
+  .about-skills-list-item.swiper-slide {
     width: 200px;
     height: 200px;
   }

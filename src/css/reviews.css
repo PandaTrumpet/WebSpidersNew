@@ -61,13 +61,10 @@
 
 .navi {
     display: flex;
-    gap: 12px;
-    margin: 0 auto;
-    width: 116px;
+    justify-content: center;
+    gap: 30px;
     height: 52px;
     margin-bottom: 32px;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 #next,

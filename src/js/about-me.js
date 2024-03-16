@@ -1,4 +1,64 @@
-// ****** ACCORDION *******
+import Swiper from "swiper";
+import 'swiper/css';
+
+// ******* SWIPER *******
+
+const mySwiper = new Swiper('.about-skills', {
+  direction: 'horizontal',
+  loop: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  mousewheel: {
+    enabled: true,
+    sensitivity: 1,
+    eventsTarget: '.about-skills',
+  },
+  navigation: {
+    nextEl: '.about-skills-arrow',
+  },
+  breakpoints: {
+     375: {
+        slidesPerView: 2
+        },
+    768: {
+        slidesPerView: 3
+        },
+    1440: {
+        slidesPerView: 6
+         }
+  },
+  effect: 'slide',
+  slideToClickedSlide: true,
+  touchRatio: 3,
+  allowTouchMove: true,
+});
+
+const slides = document.querySelectorAll('.about-skills-list-item');
+slides.forEach(slide => {
+  slide.addEventListener('click', () => {
+    slides.forEach(slide => {
+      slide.classList.remove('active');
+    });
+    slide.classList.add('active');
+  })
+})
+
+const sliderBtn = document.querySelector('.about-skills-arrow');
+sliderBtn.addEventListener('click', () => {
+  mySwiper.slideNext();
+  mySwiper.on('slideChange', () => {
+    slides.forEach(slide => {
+        slide.classList.remove('active');
+    });
+    const activeSlideIndex = mySwiper.realIndex;
+    slides[activeSlideIndex].classList.add('active');
+  });
+})
+
+// ******* ACCORDION *******
 
 const accordionItems = document.querySelectorAll('.about-info-list-item');
 

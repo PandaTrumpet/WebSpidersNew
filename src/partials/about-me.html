@@ -13,12 +13,13 @@
       <div class="about-top-image">
         <img
           class="about-img"
+          sizes="(max-width: 1440px) 680px, (max-width: 768px) 704px, (max-width: 375px) 343px"
           srcset="
-            ./img/mobile/about_me@2x.jpg, 2x
-            ./img/tablet/about_me.jpg     1x,
-            ./img/tablet/about_me@2x.jpg, 2x
-            ./img/desktop/about_me.jpg    1x,
-            ./img/desktop/about_me@2x.jpg 2x
+            ./img/mobile/about_me@2x.jpg   375w,
+            ./img/tablet/about_me.jpg      704w,
+            ./img/tablet/about_me@2x.jpg   768w,
+            ./img/desktop/about_me.jpg     680w,
+            ./img/desktop/about_me@2x.jpg 1440w
           "
           src="./img/mobile/about_me.jpg"
           alt="Man with laptop"
@@ -120,32 +121,57 @@
         </div>
       </li>
     </ul>
-    <div class="about-skills">
-      <ul class="about-skills-list">
-        <li class="about-skills-list-item active">
-          <div class="about-skills-list-item-text">HTML/CSS</div>
-        </li>
-        <li class="about-skills-list-item">
-          <div class="about-skills-list-item-text">JavaScript</div>
-        </li>
-        <li class="about-skills-list-item">
-          <div class="about-skills-list-item-text">React</div>
-        </li>
-        <li class="about-skills-list-item">
-          <div class="about-skills-list-item-text">Node js</div>
-        </li>
-        <li class="about-skills-list-item">
-          <div class="about-skills-list-item-text">React Native</div>
-        </li>
-        <li class="about-skills-list-item">
-          <div class="about-skills-list-item-text">Soft skills</div>
-        </li>
-      </ul>
-      <button class="about-skills-arrow" type="button">
-        <svg class="about-skills-arrow-icon" width="28" height="28">
-          <use href="./img/icon.svg#icon-swiper_right_icon"></use>
-        </svg>
-      </button>
+    <div class="about-skills-wrap">
+      <div class="about-skills swiper">
+        <ul class="about-skills-list swiper-wrapper">
+          <li
+            class="about-skills-list-item active scale-up-bottom swiper-slide"
+          >
+            <div class="about-skills-list-item-text">HTML/CSS</div>
+          </li>
+          <li class="about-skills-list-item scale-up-bottom swiper-slide">
+            <div class="about-skills-list-item-text">JavaScript</div>
+          </li>
+          <li class="about-skills-list-item scale-up-bottom swiper-slide">
+            <div class="about-skills-list-item-text">React</div>
+          </li>
+          <li class="about-skills-list-item scale-up-bottom swiper-slide">
+            <div class="about-skills-list-item-text">Node js</div>
+          </li>
+          <li class="about-skills-list-item scale-up-bottom swiper-slide">
+            <div class="about-skills-list-item-text">React Native</div>
+          </li>
+          <li class="about-skills-list-item scale-up-bottom swiper-slide">
+            <div class="about-skills-list-item-text">Soft skills</div>
+          </li>
+          <li class="about-skills-list-item scale-up-bottom swiper-slide">
+            <div class="about-skills-list-item-text">HTML/CSS</div>
+          </li>
+          <li class="about-skills-list-item scale-up-bottom swiper-slide">
+            <div class="about-skills-list-item-text">JavaScript</div>
+          </li>
+          <li class="about-skills-list-item scale-up-bottom swiper-slide">
+            <div class="about-skills-list-item-text">React</div>
+          </li>
+          <li class="about-skills-list-item scale-up-bottom swiper-slide">
+            <div class="about-skills-list-item-text">Node js</div>
+          </li>
+          <li class="about-skills-list-item scale-up-bottom swiper-slide">
+            <div class="about-skills-list-item-text">React Native</div>
+          </li>
+          <li class="about-skills-list-item scale-up-bottom swiper-slide">
+            <div class="about-skills-list-item-text">Soft skills</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-skills-btn">
+        <div class="about-skills-arrow">
+          <svg class="about-skills-arrow-icon" width="28" height="28">
+            <use href="./img/icon.svg#icon-swiper_right_icon"></use>
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 </section>

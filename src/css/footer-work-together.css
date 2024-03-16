@@ -1,4 +1,26 @@
 /* Mobile */
+
+.status {
+  height: 16px;
+}
+.hidden {
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.succes {
+  color: #3cbc81;
+  font-size: 14px;
+}
+.invalid {
+  color: #e74a3b;
+  font-size: 14px;
+}
+
 .footer_main {
   margin-top: 32px;
   display: flex;
@@ -39,10 +61,16 @@
   row-gap: 16px;
   margin-bottom: 64px;
 }
-
+.form_label {
+  display: flex;
+  flex-direction: column;
+  color: rgba(250, 250, 250, 0.6);
+}
 .footer_form_input {
+  padding-left: 4px;
+  margin-top: 8px;
   width: 343px;
-  height: 34px;
+  height: 24px;
   background-color: transparent;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   border-right: none;
@@ -51,10 +79,22 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-
   color: rgba(250, 250, 250, 0.6);
-  padding: 0 0 12px;
-  vertical-align: top;
+}
+
+.label_email {
+  margin-top: 16px;
+}
+.footer_form_input:hover {
+  border-bottom: 1px solid #fafafa;
+}
+
+.green_border {
+  border-bottom: 1px solid #3cbc81;
+}
+
+.red_border {
+  border-bottom: 1px solid #e74a3b;
 }
 
 .footer_form_btn {
@@ -69,6 +109,10 @@
   font-size: 16px;
 }
 
+.footer_form_btn:hover {
+  background-color: #1151f1;
+}
+
 .footer_list {
   display: flex;
   gap: 4px;
@@ -78,6 +122,7 @@
 }
 
 .footer_list_item_mail {
+  position: relative;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px 12px;
@@ -87,14 +132,21 @@
   font-size: 14px;
   letter-spacing: -0.02em;
 }
+
+.footer_list_item_mail:hover {
+  border: 1px solid #fafafa;
+}
 .footer_list_item_numb {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px 12px;
-  width: 118px;
+  width: 122px;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
+}
+.footer_list_item_numb:hover {
+  border: 1px solid #fafafa;
 }
 
 /* Modal */
@@ -123,9 +175,8 @@
 .footer_modal {
   border: 1px solid rgba(250, 250, 250, 0.1);
   border-radius: 20px;
-  padding: 64px 32px;
-  max-width: 311px;
-  max-height: 212px;
+  width: 343px;
+  height: 276px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -134,11 +185,12 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   background-color: #1c1d20;
+  padding: 64px 32px 64px 32px;
 }
 
 .footer_modal_text {
-  max-width: 279px;
-  max-height: 148px;
+  width: 279px;
+  height: 148px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -161,7 +213,7 @@
   color: rgba(250, 250, 250, 0.6);
 }
 
-.footer_modal_btn-icon {
+.footer_modal_btn_icon {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -170,4 +222,87 @@
   line-height: 0;
   border: none;
   background-color: transparent;
+}
+
+.footer_modal_svg use {
+  stroke: #fafafa;
+  fill: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .footer_modal {
+    padding: 64px;
+    width: 500px;
+    height: 246px;
+  }
+  .footer_modal_text {
+    width: 366px;
+    height: 118px;
+  }
+  .footer_main {
+    margin-top: 88px;
+  }
+  .footer_title {
+    font-size: 64px;
+  }
+  .footer_logo {
+    width: 70px;
+    height: 70px;
+    padding-bottom: 7px;
+  }
+  .footer_title_together {
+    font-size: 64px;
+    padding-bottom: 18px;
+  }
+  .footer_form {
+    flex-direction: row;
+    column-gap: 32px;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .footer_form_input {
+    width: 245px;
+  }
+  .footer_form_btn {
+    min-width: 150px;
+    min-height: 150px;
+    margin: 0;
+  }
+  .footer_list {
+    gap: 8px;
+    margin-bottom: 169px;
+  }
+  .footer_list_item_mail {
+    padding: 18px 32px;
+    width: 239px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .footer_list_item_numb {
+    padding: 18px 32px;
+    min-width: 175px;
+    min-height: 55px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer_main {
+    padding-left: 164px;
+  }
+  .footer_title_together {
+    padding-left: 164px;
+  }
+  .footer_form {
+    padding-left: 164px;
+  }
+  .footer_form_input {
+    width: 390px;
+  }
+  .footer_form_btn {
+    margin-left: 54px;
+  }
+  .footer_list {
+    padding-left: 164px;
+  }
 }

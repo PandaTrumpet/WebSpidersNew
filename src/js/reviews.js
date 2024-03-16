@@ -1,9 +1,10 @@
+import 'swiper/css'
 import Swiper from 'swiper';
-import 'swiper/css';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiperWrapper = document.querySelector(".swiper-wrapper");
+
 
 async function fetchData() {
   try {
@@ -17,6 +18,8 @@ async function fetchData() {
     throw error;
   }
 };
+
+const swiperWrapper = document.querySelector(".swiper-wrapper");
 
 function createSlide(review) {
   return `<li class="swiper-slide">
@@ -44,13 +47,13 @@ document.addEventListener("DOMContentLoaded", async function renderEvent() {
 });
 
 function initSwiper() {
-    let slidesPerView = 1;
-    if (window.innerWidth >= 768 && window.innerWidth < 1200) {
-        slidesPerView = 2;
-    } else if (window.innerWidth >= 1200) {
-        slidesPerView = 4;
-    }
-    new Swiper(".swiper", {
+  let slidesPerView = 1;
+  if (window.innerWidth >= 768 && window.innerWidth < 1200) {
+    slidesPerView = 2;
+  } else if (window.innerWidth >= 1200) {
+    slidesPerView = 4;
+  }
+  const swiper = new Swiper(".swiper", {
     loop: true,
     spaceBetween: 100,
     slidesPerView: slidesPerView,
@@ -61,24 +64,43 @@ function initSwiper() {
     },
     speed: 700,
     navigation: {
-      nextEl: '.swiper .swiper-button-next', 
-      prevEl: '.swiper .swiper-button-prev',
+      nextEl: '.swiper-button-next', 
+      prevEl: '.swiper-button-prev',
       clickable: true,
     },
     pagination: {
-      el: '.-pagination',
+      el: '.swiper-pagination',
       clickable: true,
     },
     hashNavigation: {
       watchState: true,
     },
     keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-      pageUpDown: true,
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
     },
-    mousewheel: {
-      sensitivity: 1,
+    on: {
+        reachEnd: function() {
+            document.querySelector('.swiper-button-next').disabled = true;
+            document.querySelector('.swiper-button-prev').disabled = true;
+        },
+        reachBeginning: function() {
+
+            document.querySelector('.swiper-button-next').disabled = false;
+            document.querySelector('.swiper-button-prev').disabled = false;
+        }
     }
-    });
+  });
+  
+  const sliderNext = document.querySelector(".swiper-button-next");
+  const sliderPrev = document.querySelector(".swiper-button-prev");
+
+  sliderNext.addEventListener('click', () => {
+    swiper.slideNext(500);
+  });
+
+  sliderPrev.addEventListener('click', () => {
+    swiper.slidePrev(500);
+  });
 }

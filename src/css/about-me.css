@@ -5,23 +5,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-/*================= кнопка скрола =======================*/
-.btn-top {
-  position: fixed;
-  bottom: 3vh;
-  right: 1vh;
-  z-index: 1000;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
 
-.btn-top--visible {
-  opacity: 1;
-  visibility: visible;
-}
-/*================= кнопка скрола =======================*/
 .about {
   width: 100%;
   margin-top: 64px;

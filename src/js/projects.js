@@ -23,4 +23,5 @@ sliderprev.addEventListener('click', () => {
  });
 
    const swipers = document.querySelector('.swiper').swiper;
- swiper.slidePrev()
+swiper.slidePrev()
+ 

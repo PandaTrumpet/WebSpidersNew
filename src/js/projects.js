@@ -15,7 +15,8 @@ const sliderNex = document.querySelector('.swiper-button-next')
  const sliderprev = document.querySelector('.swiper-button-prev')
  sliderprev.addEventListener('click',()=>{     swiper.slidePrev(500)
  })
- const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
+     modules: [Navigation, Pagination],
      speed: 400,
      spaceBetween: 100,
  });

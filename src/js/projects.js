@@ -5,15 +5,6 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiper = new Swiper('.swiper', {
-     modules: [Navigation, Pagination],
-     speed: 400,
-     spaceBetween: 100,
- });
-
-   const swipers = document.querySelector('.swiper').swiper;
- swiper.slidePrev()
-
 const sliderNex = document.querySelector('.swiper-button-next')
  sliderNex.addEventListener('click',()=>{ 
     console.log('Hello');
@@ -22,5 +13,14 @@ const sliderNex = document.querySelector('.swiper-button-next')
     
  )
  const sliderprev = document.querySelector('.swiper-button-prev')
- sliderprev.addEventListener('click',()=>{     swiper.slidePrev(500)
+sliderprev.addEventListener('click', () => {
+    swiper.slidePrev(500)
  })
+ const swiper = new Swiper('.swiper', {
+     speed: 400,
+     spaceBetween: 100,
+     direction: 'horizontal',
+ });
+
+   const swipers = document.querySelector('.swiper').swiper;
+ swiper.slidePrev()

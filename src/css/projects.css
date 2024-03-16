@@ -76,10 +76,10 @@
         flex-direction: row;
         gap: 10px;
         border-radius: 60px;
-        border: 1px solid #ed3b44;
+        border: 1px solid #0041e8;
         width: 141px;
         height: 55px;
-        background: #ed3b44;
+        background: #0041e8;
     }
 
     .text-button {
@@ -186,10 +186,10 @@ border-radius: 24px 24px 0 0;
         flex-direction: row;
         gap: 10px;
 border-radius: 60px;
-border: 1px solid #ed3b44;
+border: 1px solid #0041e8;
     width: 177px;
     height: 55px;
-    background: #ed3b44;
+    background: #0041e8;
 }
 
 .text-button {
@@ -241,7 +241,7 @@ padding-left: 32px;
     }
 
 .swiper-slide {
-    display: flex;
+    display: flex !important; 
         justify-content: flex-start;
         flex-direction: row;
 }
@@ -265,8 +265,14 @@ padding-left: 32px;
     padding: 120px 37px;
 }
 }
-
-
+.cont-btn {
+    width: 177px;
+        padding: 18px 50px;
+}
+.text-button {
+    max-width: 77px;
+    font-size: 16px;
+}
 .about-projects {
     background-color: #FAFAFA;
 }
@@ -274,3 +280,4 @@ padding-left: 32px;
 .list-items {
     list-style: none;
 }
+

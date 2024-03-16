@@ -1,7 +1,7 @@
 #covers{
     margin: 0 auto;
     background-color: rgba(217, 217, 217, 0.04);
-    background-image: url(./img/covers_elements/element1_blue.png), url(./img/covers_elements/element2_blue.png), url(./img/covers_elements/element2_blue.png);
+    background-image: url(../img/covers_elements/element1_blue.png), url(../img/covers_elements/element2_blue.png), url(../img/covers_elements/element2_blue.png);
     background-position: -20% -12%, 50% 120%, 120% 20% ;
   background-size: 60% ;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     #covers {
-        background-image: url(./img/covers_elements/element1_blue@2x.png), url(./img/covers_elements/element2_blue@2x.png), url(./img/covers_elements/element2_blue@2x.png);
+        background-image: url(../img/covers_elements/element1_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png);
       }
   }
 
@@ -125,7 +125,7 @@
 screen and (min-resolution: 2dppx) and (min-width: 768px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   #covers {
-    background-image: url(./img/covers_elements/element1_blue@2x.png), url(./img/covers_elements/element2_blue@2x.png), url(./img/covers_elements/element2_blue@2x.png);
+    background-image: url(../img/covers_elements/element1_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png);
   }
 }
 
@@ -151,6 +151,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
       screen and (min-device-pixel-ratio: 2) and (min-width: 1400px) {
      
         #covers {
-      background-image: url(./img/covers_elements/element1_blue@2x.png), url(./img/covers_elements/element2_blue@2x.png), url(./img/covers_elements/element2_blue@2x.png);
+      background-image: url(../img/covers_elements/element1_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png);
         }
       }

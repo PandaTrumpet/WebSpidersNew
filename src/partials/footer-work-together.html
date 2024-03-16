@@ -1,16 +1,31 @@
 <section id="footer-work-together">
     <div class="container">
         <div class="footer_main">
-            <img class="footer_logo" src="./img/mobile/footer_logo.jpg" alt="footerLogo">
+            <img class="footer_logo" srcset="
+            ./img/mobile/footer_logo@2x.jpg, 2x
+            ./img/tablet/footer_logo.jpg     1x,
+            ./img/tablet/footer_logo@2x.jpg, 2x
+            ./img/desktop/footer_logo.jpg    1x,
+            ./img/desktop/footer_logo@2x.jpg 2x
+          " src="./img/mobile/footer_logo.jpg" alt="footerLogo">
             <h1 class="footer_title">
                 Let’s <span class="footer_title_work">work</span>
             </h1>
         </div>
         <div class="footer_title_together">together</div>
         <form class="footer_form">
-            <input type="email" class="footer_form_input" pattern="[A-z0-9_.-]{1,}@[A-z0-9_.-]{1,}.[A-z]{2,8}"
-                placeholder="Email.." required>
-            <input type="text" class="footer_form_input" placeholder="comments">
+            <label for="email" class="form_label label_email">Email:
+                <input type="email" name="email" class="footer_form_input footer_form_input_email" autocomplete="off"
+                    pattern="[A-z0-9_.-]{1,}@[A-z0-9_.-]{1,}.[A-z]{2,8}" required>
+                <div class="status">
+                    <p class="succes hidden">Succes!</p>
+                    <p class="invalid hidden">Invalid email, try again</p>
+                </div>
+            </label>
+            <label for="comments" class="form_label ">Comments:
+                <input type="text" name="comments" class="footer_form_input footer_form_input_comment"
+                    autocomplete="off">
+            </label>
             <button type="submit" class="footer_form_btn">Send</button>
         </form>
         <ul class="footer_list">
@@ -23,9 +38,11 @@
 
     <div class="footer_modal_container">
         <div class="footer_modal">
-            <button class="footer_modal_btn-icon" type="button"><svg width="22" height="22">
-                    <use href=""></use>
-                </svg></button>
+            <button class="footer_modal_btn_icon" type="button">
+                <svg class="footer_modal_svg" width="22" height="22">
+                    <use href="./img/icon.svg"></use>
+                </svg>
+            </button>
             <div class="footer_modal_text">
                 <h2 class="footer_modal_text_first">Thank you for your interest in cooperation!</h2>
                 <p class="footer_modal_text_second">The manager will contact you shortly to discuss further details and

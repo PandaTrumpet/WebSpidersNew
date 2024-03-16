@@ -19,10 +19,10 @@ async function fetchData() {
   }
 };
 
-const swiperWrapper = document.querySelector(".swiper-wrapper");
+const swiperWrapper = document.querySelector(".swiper-list-container");
 
 function createSlide(review) {
-  return `<li class="swiper-slide">
+  return `<li class="swiper-slide swiper-review-slide">
     <div class="review">
       <img src="${review.avatar_url}" alt="Avatar" class="review-avatar">
       <p class="review-author">${review.author}</p>
@@ -75,8 +75,8 @@ function initSwiper() {
     },
     speed: 700,
     navigation: {
-      nextEl: '.swiper-button-next', 
-      prevEl: '.swiper-button-prev',
+      nextEl: '#before_btn', 
+      prevEl: '#next_btn',
       clickable: true,
     },
     pagination: {
@@ -90,8 +90,8 @@ function initSwiper() {
     },
   });
 
-  const sliderNext = document.querySelector(".swiper-button-next");
-  const sliderPrev = document.querySelector(".swiper-button-prev");
+  const sliderNext = document.querySelector("#next_btn");
+  const sliderPrev = document.querySelector("#before_btn");
 
   sliderNext.addEventListener('click', () => {
     swiper.slideNext(500);

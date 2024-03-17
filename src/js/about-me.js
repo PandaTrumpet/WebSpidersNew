@@ -63,6 +63,10 @@ sliderBtn.addEventListener('click', () => {
 })
 
 document.addEventListener('keydown', (e) => {
+   if (e.key === 'Tab') {
+    e.preventDefault();
+    sliderBtn.focus();
+  }
   if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
  mySwiper.slideNext();
   } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
@@ -72,25 +76,24 @@ document.addEventListener('keydown', (e) => {
 
 // ******* ACCORDION *******
 
+const accordion = new Accordion('.about-info-list', {
+  duration: 600,
+  showMultiple: true,
+  openOnInit: [0],
+});
+
 const accordionItems = document.querySelectorAll('.about-info-list-item');
 
   accordionItems.forEach((item, index) => {
     const accordionBtn = item.querySelector('.about-info-list-item-btn');
-      // const accordionContent = item.querySelector('.about-info-list-item-content');
       const accordionArrow = item.querySelector('.about-info-list-item-btn-down-icon');
 
     if (index === 0) {
-        // accordionContent.classList.add('active');
         accordionArrow.classList.add('active');
     }
     
     accordionBtn.addEventListener('click', () => {
-        // accordionContent.classList.toggle('active');
         accordionArrow.classList.toggle('active');
     });
   });
 
-const accordion = new Accordion('.about-info-list', {
-  duration: 600,
-  showMultiple: true,
-});

@@ -48,8 +48,26 @@ import 'swiper/css/pagination';
   allowTouchMove: true,
 });
 
-  const sliderNext = document.querySelector(".swiper-button-next");
-  const sliderPrev = document.querySelector(".swiper-button-prev");
+const sliderNext = document.querySelector(".swiper-button-next");
+const sliderPrev = document.querySelector(".swiper-button-prev");
+  
+  function updateNavButtons() {
+    // Если текущий слайд первый, делаем кнопку "назад" неактивной
+    if (swiper.isBeginning) {
+        sliderPrev.disabled = true;
+    } else {
+        sliderPrev.disabled = false;
+    }
+
+    // Если текущий слайд последний, делаем кнопку "вперёд" неактивной
+    if (swiper.isEnd) {
+        sliderNext.disabled = true;
+    } else {
+        sliderNext.disabled = false;
+    }
+}
+
+swiper.on('slideChange', updateNavButtons);
 
   sliderNext.addEventListener('click', () => {
     swiper.slideNext(500);
@@ -58,3 +76,5 @@ import 'swiper/css/pagination';
   sliderPrev.addEventListener('click', () => {
     swiper.slidePrev(500);
   });
+updateNavButtons();
+

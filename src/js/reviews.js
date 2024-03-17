@@ -51,45 +51,40 @@ function renderSlides(reviewsData) {
 });
 
 function initSwiper() {
-  const swiper = new Swiper(".swiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    autoplay: {
-      delay: 2000,
-      stopOnLastSlide: true,
-      disableOnInteraction: false
-    },
-    breakpoints:{
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 16
-      },
-      1440:{
-        slidesPerView: 4,
-        spaceBetween: 17
-      }
-    },
-    speed: 700,
-    navigation: {
-      nextEl: '#before_btn', 
-      prevEl: '#next_btn',
+  const swiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  mousewheel: {
+    enabled: true,
+    sensitivity: 1,
+    eventsTarget: '.swiper',
+  },
+  navigation: {
+      nextEl: '#next_btn', 
+      prevEl: '#before_btn',
       clickable: true,
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+  breakpoints: {
+    375: {
+        slidesPerView: 1
+        },
+    768: {
+        slidesPerView: 2
     },
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-      pageUpDown: true,
+    1440: {
+        slidesPerView: 4
+         }
     },
+  effect: 'slide',
+  slideToClickedSlide: true,
+  touchRatio: 3,
+  allowTouchMove: true,
   });
-
+  
   const sliderNext = document.querySelector("#next_btn");
   const sliderPrev = document.querySelector("#before_btn");
 
@@ -100,4 +95,19 @@ function initSwiper() {
   sliderPrev.addEventListener('click', () => {
     swiper.slidePrev(500);
   });
+
+  // function updateNavButtons() {
+  //   if (swiper.isBeginning) {
+  //       sliderPrev.disabled = true;
+  //   } else {
+  //       sliderPrev.disabled = false;
+  //   }
+
+  //   if (swiper.isEnd) {
+  //       sliderNext.disabled = true;
+  //   } else {
+  //       sliderNext.disabled = false;
+  //   }
+  // }
+  // updateNavButtons();
 }

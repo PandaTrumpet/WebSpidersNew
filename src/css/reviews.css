@@ -18,7 +18,6 @@
 .swiper-list {
     display: flex;
     gap: 16px;
-    min-width: 0;
 }
 
 .review {
@@ -27,7 +26,7 @@
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 20px;
     padding: 32px 24px;
-    width: 332px;
+    width: 315px;
     height: 350px;
 }
 
@@ -77,10 +76,10 @@
     height: 52px;
 }
 
-.swiper-button-pre,
-.swiper-button-next {
+/* .swiper-button-pre, */
+/* .swiper-button-next {
     position: absolute
-}
+} */
 
 #next_btn::after {
     content: '';
@@ -94,3 +93,9 @@
 .icon-prev {
     transform: rotate(180deg);
 }
+
+/* .swiper-button-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+} */

@@ -25,6 +25,7 @@
   margin-top: 32px;
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .footer_logo {
@@ -289,10 +290,9 @@
 @media screen and (min-width: 1440px) {
   .footer_main {
     padding-left: 164px;
+    max-width: 600px;
   }
-  .footer_title_together {
-    padding-left: 164px;
-  }
+
   .footer_form {
     padding-left: 164px;
   }

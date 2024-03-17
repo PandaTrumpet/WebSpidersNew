@@ -1,18 +1,18 @@
 <section id="footer-work-together">
     <div class="container">
         <div class="footer_main">
-            <img class="footer_logo" srcset="
-            ./img/mobile/footer_logo@2x.jpg, 2x
-            ./img/tablet/footer_logo.jpg     1x,
-            ./img/tablet/footer_logo@2x.jpg, 2x
-            ./img/desktop/footer_logo.jpg    1x,
-            ./img/desktop/footer_logo@2x.jpg 2x
-          " src="./img/mobile/footer_logo.jpg" alt="footerLogo">
-            <h1 class="footer_title">
+            <img class="footer_logo" sizes="(min-width: 1440px) 70px, (min-width: 768px) 70px, (max-width: 768px) 44px"
+                srcset="
+                        ./img/mobile/footer_logo@2x.jpg 88w,
+                        ./img/tablet/footer_logo.jpg     70w,
+                        ./img/tablet/footer_logo@2x.jpg 140w,
+                        ./img/desktop/footer_logo.jpg    70w,
+                        ./img/desktop/footer_logo@2x.jpg 140w" src="./img/mobile/footer_logo.jpg" alt="footerLogo">
+            <h2 class="footer_title">
                 Let’s <span class="footer_title_work">work</span>
-            </h1>
+            </h2>
+            <span class="footer_title_together">together</span>
         </div>
-        <div class="footer_title_together">together</div>
         <form class="footer_form">
             <label for="email" class="form_label label_email">Email:
                 <input type="email" name="email" class="footer_form_input footer_form_input_email" autocomplete="off"
@@ -40,7 +40,7 @@
         <div class="footer_modal">
             <button class="footer_modal_btn_icon" type="button">
                 <svg class="footer_modal_svg" width="22" height="22">
-                    <use href="./img/icon.svg"></use>
+                    <use href="./img/icon.svg#icon-modal-close"></use>
                 </svg>
             </button>
             <div class="footer_modal_text">
@@ -51,3 +51,10 @@
         </div>
     </div>
 </section>
+
+<!-- <img class="collection-images" sizes="(min-width: 1280px) 400px, (min-width: 768px) 335px, (max-width: 768px) 335px"
+    srcset="/project-13/assets/collection-4-mobile-f0f47f92.jpg 335w, 
+    /project-13/assets/collection-4-mobile@2x-d99ac574.jpg 670w, 
+    /project-13/assets/collection-4-desktop-max-fa70818a.jpg 400w, 
+    /project-13/assets/collection-4-desktop-max@2x-2553504a.jpg 800w"
+    src="/project-13/assets/collection-4-mobile-f0f47f92.jpg" alt="Men's shirt Verkhovina" width="335" height="430"> -->

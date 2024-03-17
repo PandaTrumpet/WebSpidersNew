@@ -87,6 +87,26 @@ function initSwiper() {
   
   const sliderNext = document.querySelector("#next_btn");
   const sliderPrev = document.querySelector("#before_btn");
+  
+  function updateNavButtons() {
+    if (swiper.isBeginning) {
+        sliderPrev.classList.add('swiper-button-dis'); 
+        sliderPrev.disabled = true;
+    } else {
+        sliderPrev.classList.remove('swiper-button-dis');
+        sliderPrev.disabled = false;
+    }
+
+    if (swiper.isEnd) {
+        sliderNext.classList.add('swiper-button-dis'); 
+        sliderNext.disabled = true;
+    } else {
+        sliderNext.classList.remove('swiper-button-dis'); 
+        sliderNext.disabled = false;
+    }
+  }
+  
+  swiper.on('slideChange', updateNavButtons);
 
   sliderNext.addEventListener('click', () => {
     swiper.slideNext(500);
@@ -95,19 +115,7 @@ function initSwiper() {
   sliderPrev.addEventListener('click', () => {
     swiper.slidePrev(500);
   });
+  
+  updateNavButtons();
 
-  // function updateNavButtons() {
-  //   if (swiper.isBeginning) {
-  //       sliderPrev.disabled = true;
-  //   } else {
-  //       sliderPrev.disabled = false;
-  //   }
-
-  //   if (swiper.isEnd) {
-  //       sliderNext.disabled = true;
-  //   } else {
-  //       sliderNext.disabled = false;
-  //   }
-  // }
-  // updateNavButtons();
 }

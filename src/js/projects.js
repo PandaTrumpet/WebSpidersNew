@@ -25,7 +25,7 @@ import 'swiper/css/pagination';
 //    const swipers = document.querySelector('.swiper').swiper;
 // swiper.slidePrev()
  
-  const swiper = new Swiper('.main-swiper-container', {
+  const swiperProject = new Swiper('.main-swiper-container', {
   direction: 'horizontal',
   keyboard: {
     enabled: true,
@@ -66,7 +66,7 @@ const sliderPrev = document.querySelector(".btn-p");
 // }
 
 function updateNavButtons() {
-    if (swiper.isBeginning) {
+    if (swiperProject.isBeginning) {
         sliderPrev.classList.add('swiper-button-disabled'); 
         sliderPrev.disabled = true;
     } else {
@@ -74,7 +74,7 @@ function updateNavButtons() {
         sliderPrev.disabled = false;
     }
 
-    if (swiper.isEnd) {
+    if (swiperProject.isEnd) {
         sliderNext.classList.add('swiper-button-disabled'); 
         sliderNext.disabled = true;
     } else {
@@ -83,13 +83,14 @@ function updateNavButtons() {
     }
 }
 
-swiper.on('slideChange', updateNavButtons);
+swiperProject.on('slideChange', updateNavButtons);
 
   sliderNext.addEventListener('click', () => {
-    swiper.slideNext(500);
+    swiperProject.slideNext(500);
   });
 
   sliderPrev.addEventListener('click', () => {
-    swiper.slidePrev(500);
+    swiperProject.slidePrev(500);
   });
 updateNavButtons();
+

@@ -17,5 +17,9 @@ mobileOrderBtn.addEventListener('click', () => {
     workSection.scrollIntoView({ behavior: "smooth" });
 });
 orderBtn.addEventListener('click', () => {
-    window.location.href = "#ooter-work-together"
+    window.location.href = "#footer-work-together"
 })
+menuBtn.addEventListener('click', () => {
+    list.classList.toggle('active');
+});
+

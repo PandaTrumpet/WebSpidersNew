@@ -64,7 +64,8 @@ footerForm.addEventListener(`submit`, event => {
     .catch(error => {
       console.error(error);
       iziToast.error({
-        message: 'Email is incorrect',
+        message:
+          'Please enter your email address correctly and fill out all fields.',
         position: 'topRight',
       });
     });

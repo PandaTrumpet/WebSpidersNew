@@ -188,6 +188,7 @@
   transform: translate(-50%, -50%) scale(1);
   background-color: #1c1d20;
   padding: 64px 32px 64px 32px;
+  z-index: 999;
 }
 
 .footer_modal_text {
@@ -274,6 +275,7 @@
   .footer_list {
     gap: 8px;
     margin-bottom: 169px;
+    height: 55px;
   }
   .footer_list_item_mail {
     padding: 18px 32px;

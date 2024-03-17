@@ -1,13 +1,11 @@
 .benefits_section {
   padding-top: 32px;
   padding-bottom: 32px;
-  margin: 0 auto;
+  margin: 0;
   
   
 }
-.benefits_container {
-  /* margin: o auto; */
-}
+
 .benefits_title {
   font-weight: 600;
   line-height: 1.5;

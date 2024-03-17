@@ -25,7 +25,7 @@ import 'swiper/css/pagination';
 //    const swipers = document.querySelector('.swiper').swiper;
 // swiper.slidePrev()
  
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.main-swiper-container', {
   direction: 'horizontal',
   keyboard: {
     enabled: true,

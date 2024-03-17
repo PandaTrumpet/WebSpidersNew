@@ -38,8 +38,8 @@ import 'swiper/css/pagination';
     eventsTarget: '.swiper',
   },
   navigation: {
-      nextEl: '.swiper-button-next', 
-      prevEl: '.swiper-button-prev',
+      nextEl: '.btn-n', 
+      prevEl: '.btn-p',
       clickable: true,
     },
   effect: 'slide',
@@ -48,19 +48,37 @@ import 'swiper/css/pagination';
   allowTouchMove: true,
 });
 
-const sliderNext = document.querySelector(".swiper-button-next");
-const sliderPrev = document.querySelector(".swiper-button-prev");
+const sliderNext = document.querySelector(".btn-n");
+const sliderPrev = document.querySelector(".btn-p");
   
-  function updateNavButtons() {
+//   function updateNavButtons() {
+//     if (swiper.isBeginning) {
+//         sliderPrev.disabled = true;
+//     } else {
+//         sliderPrev.disabled = false;
+//     }
+
+//     if (swiper.isEnd) {
+//         sliderNext.disabled = true;
+//     } else {
+//         sliderNext.disabled = false;
+//     }
+// }
+
+function updateNavButtons() {
     if (swiper.isBeginning) {
+        sliderPrev.classList.add('swiper-button-disabled'); 
         sliderPrev.disabled = true;
     } else {
+        sliderPrev.classList.remove('swiper-button-disabled');
         sliderPrev.disabled = false;
     }
 
     if (swiper.isEnd) {
+        sliderNext.classList.add('swiper-button-disabled'); 
         sliderNext.disabled = true;
     } else {
+        sliderNext.classList.remove('swiper-button-disabled'); 
         sliderNext.disabled = false;
     }
 }
@@ -75,7 +93,3 @@ swiper.on('slideChange', updateNavButtons);
     swiper.slidePrev(500);
   });
 updateNavButtons();
-
-
-
-

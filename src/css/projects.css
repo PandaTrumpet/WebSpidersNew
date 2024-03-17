@@ -1,5 +1,9 @@
 
 @media screen and (max-width: 767px) {
+    .proj-section {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -131,6 +135,10 @@
 
 /* СТИЛІ ТАБЛЕТКА */
 @media screen and (min-width: 768px) {
+.proj-section {
+padding-top: 48px;
+padding-bottom: 48px;
+}
 .container {
     max-width: 704px;
     padding-left: 32px;
@@ -242,6 +250,11 @@ border-radius: 0 0 24px 24px;
 
 /* СТИЛІ ДЕСКТОП */
 @media screen and (min-width: 1440px) {
+
+    .proj-section {
+            padding-top: 82px;
+            padding-bottom: 82px;
+        }
     .container {
 max-width: 1376px;
 padding-left: 32px;

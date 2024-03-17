@@ -52,14 +52,12 @@ const sliderNext = document.querySelector(".swiper-button-next");
 const sliderPrev = document.querySelector(".swiper-button-prev");
   
   function updateNavButtons() {
-    // Если текущий слайд первый, делаем кнопку "назад" неактивной
     if (swiper.isBeginning) {
         sliderPrev.disabled = true;
     } else {
         sliderPrev.disabled = false;
     }
 
-    // Если текущий слайд последний, делаем кнопку "вперёд" неактивной
     if (swiper.isEnd) {
         sliderNext.disabled = true;
     } else {
@@ -77,4 +75,7 @@ swiper.on('slideChange', updateNavButtons);
     swiper.slidePrev(500);
   });
 updateNavButtons();
+
+
+
 

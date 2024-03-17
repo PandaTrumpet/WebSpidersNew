@@ -7,7 +7,7 @@ const mobileOrderBtn = document.querySelector(".mobile-order-btn")
 const workSection = document.getElementById('footer-work-together')
 const orderBtn = document.querySelector('.order-btn')
 const mobileList = document.querySelector('.mobile-menu-list')
-const item = document.querySelector(".menu-item")
+const item = document.querySelector(".menu-link")
 
 mobileBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('visually-hidden');
@@ -27,6 +27,7 @@ orderBtn.addEventListener('click', () => {
 menuBtn.addEventListener('click', (event) => {
     list.classList.toggle('active');
 });
+
 mobileList.addEventListener('click', () => {
     if (mobileList) {
         mobileMenu.classList.add('visually-hidden');

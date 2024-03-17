@@ -3,7 +3,9 @@
   padding-bottom: 32px;
   
 }
-
+.benefits_container {
+  margin: o auto;
+}
 .benefits_title {
   font-weight: 600;
   line-height: 1.5;
@@ -33,7 +35,7 @@
   padding: 24px;
   border-radius: 20px;
   background-color: #242527;
-  /* width: 344px; */
+  width: 344px;
 }
 .benefits_items_title {
   font-weight: 600;
@@ -74,7 +76,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 704px;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -103,7 +105,7 @@
 
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1376px;
+    max-width: 1440px;
   }
 
   .benefits_section {

@@ -1,3 +1,4 @@
+
 const menuBtn = document.querySelector(".menu-button");
 const list = document.querySelector(".menu-list")
 const mobileBtn = document.querySelector(".burger-btn");
@@ -43,8 +44,3 @@ closeMenu.forEach(link => {
         list.style.display = "none";
     })
 });
-// item.addEventListener('click', (event) => {
-//     if (event.target === event.currentTarget) {
-//         list.classList.remove('active')
-//     }
-// });

@@ -152,18 +152,6 @@ button#ac-trigger-2.about-info-list-item-btn.ac-trigger:hover {
   transform: rotate(180deg);
 }
 
-.about-info-list-item-content.ac-panel {
-  display: none;
-  transition: max-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
-}
-
-.about-info-list-item-content.ac-panel.active {
-  display: block;
-  max-height: 800px;
-  animation: slideIn 0.7s ease forwards;
-}
-
 .about-info-list-item-text {
   display: flex;
   flex-direction: column;
@@ -233,7 +221,6 @@ button#ac-trigger-2.about-info-list-item-btn.ac-trigger:hover {
   margin-right: 0;
   padding: 0;
   background-color: transparent;
-  border: 1px solid #000;
   line-height: 0;
   width: 28px;
   height: 28px;

@@ -58,7 +58,6 @@ footerForm.addEventListener(`submit`, event => {
 
   postData(data)
     .then(data => {
-      console.log(data);
       return data;
     })
     .catch(error => {

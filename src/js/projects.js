@@ -92,5 +92,16 @@ swiperProject.on('slideChange', updateNavButtons);
   sliderPrev.addEventListener('click', () => {
     swiperProject.slidePrev(500);
   });
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === "ArrowRight" || event.key === "ArrowUp")
+        swiperProject.slideNext(500);
+});
+  
+document.addEventListener('keydown', (event) => {
+    if (event.key === "ArrowLeft" || event.key === "ArrowDown")
+        swiperProject.slidePrev(500);
+});
+
 updateNavButtons();
 

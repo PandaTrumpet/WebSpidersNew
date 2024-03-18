@@ -21,6 +21,13 @@
   margin-top: 26px !important;
   padding: 0 !important;
 }
+.faq-icon {
+  margin: auto;
+  display: block;
+}
+.ac .ac-trigger {
+  padding: 0 !important;
+}
 
 .ac {
   /* faq-list  */

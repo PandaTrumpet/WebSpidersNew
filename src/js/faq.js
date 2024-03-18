@@ -1,10 +1,9 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
-new Accordion('.accordion-container', {
+new Accordion('.faq-container .accordion-container', {
   duration: 400,
   showMultiple: true,
 });
-
 document.addEventListener('DOMContentLoaded', function () {
   const accordionContainer = document.querySelector('.accordion-container');
 

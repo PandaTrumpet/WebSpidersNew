@@ -25,11 +25,16 @@ orderBtn.addEventListener('click', () => {
     window.location.href = "#footer-work-together"
 })
 menuBtn.addEventListener('click', (event) => {
-    list.classList.toggle('active');
+     list.classList.toggle('active')
 });
 
 mobileList.addEventListener('click', () => {
     if (mobileList) {
         mobileMenu.classList.add('visually-hidden');
+    }
+})
+item.addEventListener('click', (event) => {
+    if (event.target === event.currentTarget) {
+        list.classList.remove('active')
     }
 })

@@ -61,6 +61,7 @@ function initSwiper() {
   mousewheel: {
     enabled: true,
     sensitivity: 1,
+    onlyInViewport: true,
     eventsTarget: '.swiper',
   },
   navigation: {
@@ -101,7 +102,7 @@ function initSwiper() {
         sliderNext.classList.add('swiper-button-dis'); 
         sliderNext.disabled = true;
     } else {
-        sliderNext.classList.remove('swiper-button-dis'); 
+        sliderNext.classList.remove('swiper-button-dis');
         sliderNext.disabled = false;
     }
   }
@@ -117,5 +118,13 @@ function initSwiper() {
   });
   
   updateNavButtons();
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      swiper.slideNext();
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      swiper.slidePrev(); 
+  }
+});
 
 }

@@ -33,3 +33,8 @@ mobileList.addEventListener('click', () => {
     mobileMenu.classList.add('visually-hidden');
   }
 });
+item.addEventListener('click', event => {
+  if (event.target === event.currentTarget) {
+    list.classList.remove('active');
+  }
+});

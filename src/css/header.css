@@ -14,7 +14,7 @@
 
 .main-page{
     padding-top: 32px;
-    
+    position: absolute;
 } 
 .header-container{
     display: flex;
@@ -113,8 +113,9 @@ margin-bottom: auto;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.21;
-     letter-spacing: -2%;
+    letter-spacing: -2%;
     text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-order-btn:hover{
     transform: scale(1.1);
@@ -147,6 +148,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         max-width: 704px;
         padding-left: 32px;
         padding-right: 32px;
+        padding-bottom: 48px;
     }
     .burger-btn{
         display: none;
@@ -187,6 +189,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             line-height: 1.19;
             letter-spacing: -2%;
             text-align: center;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
          .order-btn:hover {
             transform: scale(1.1);
@@ -196,7 +199,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                     display: none;
                     position: fixed;
                     top: 15%;
-                    left: -7.5%;
+                    left: -4%;
                     width: 100vw;
                     height: 100vh;
                     color: #FFFFFF;
@@ -216,6 +219,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 1440px) {
     .container {
         max-width: 1376px;
+        padding-bottom: 82px;
     }
 .menu-button{
     margin: 0 470px;

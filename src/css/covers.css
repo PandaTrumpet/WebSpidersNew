@@ -1,4 +1,5 @@
 #covers{
+  padding-bottom: 32px;
     margin: 0 auto;
     background-color: rgba(217, 217, 217, 0.04);
     background-image: url(../img/covers_elements/element1_blue.png), url(../img/covers_elements/element2_blue.png), url(../img/covers_elements/element2_blue.png);
@@ -102,6 +103,7 @@
 
   @media screen and (min-width: 768px){
     #covers{
+      padding-bottom: 48px;
       max-width: 768px;
     max-height: 960px;
     background-position: 0% 0%, 100% -30%, 25% 70% ;
@@ -131,6 +133,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
   @media screen and (min-width: 1440px) {
     #covers{
+      padding-bottom: 82px;
       max-width: 1440px;
       background-position: -50% -50%, 130% 15%, 0% 150% ;
       background-size: 50%;

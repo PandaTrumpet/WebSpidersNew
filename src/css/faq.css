@@ -10,36 +10,36 @@
   color: rgba(250, 250, 250, 1);
 }
 
-.ac-text {
+.faq-container .faq-menu .faq-list .faq-text {
   /*  faq-text */
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.02em;
   text-align: left;
-  color: rgba(250, 250, 250, 0.6) !important;
-  margin-top: 26px !important;
-  padding: 0 !important;
+  color: rgba(250, 250, 250, 0.6);
+  margin-top: 26px;
+  padding: 0;
 }
 .faq-icon {
   margin: auto;
   display: block;
 }
-.ac .ac-trigger {
-  padding: 0 !important;
+.faq-container .faq-menu .faq-list .faq-button {
+  padding: 0;
 }
 
-.ac {
+.faq-container .faq-menu .faq-list {
   /* faq-list  */
   position: relative;
   width: calc((100% - 48px) / 2);
-  border: 1px solid rgba(250, 250, 250, 0.2) !important;
+  border: 1px solid rgba(250, 250, 250, 0.2);
   padding-bottom: 32px;
   padding-top: 32px;
   border-left: none;
   border-right: none;
-  background-color: rgba(28, 29, 32, 1) !important;
-  margin-top: 0 !important;
+  background-color: rgba(28, 29, 32, 1);
+  margin-top: 0;
 }
 
 .faq-section-title {
@@ -51,28 +51,28 @@
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
 }
-.ac .ac-trigger {
+.faq-container .faq-menu .faq-list .faq-button {
   /* faq-button-down  up*/
-  position: absolute !important;
-  top: 32px; /* Підігнати вертикально відповідно до потреб */
+  position: absolute;
+  top: 32px;
   right: 32px;
-  border: 1px solid rgba(250, 250, 250, 0.2) !important;
-  background-color: rgba(28, 29, 32, 1) !important;
-  width: 40px !important;
-  height: 40px !important;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: rgba(28, 29, 32, 1);
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  display: flex; /* Встановлюємо flex контейнер */
-  justify-content: center; /* Центруємо вміст по горизонталі */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: auto !important;
+  padding: auto;
 }
 
-.ac .ac-trigger:hover,
-.ac .ac-trigger:focus {
-  border: 1px solid rgba(250, 250, 250, 1) !important;
+.faq-container .faq-menu .faq-list .faq-button:hover,
+.faq-container .faq-menu .faq-list .faq-button:focus {
+  border: 1px solid rgba(250, 250, 250, 1);
 }
-.ac .ac-trigger::after {
-  content: '' !important;
+.faq-container .faq-menu .faq-list .faq-button::after {
+  content: '';
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -83,10 +83,7 @@
   transform: rotate(-180deg);
 } */
 
-.faq-button-up {
-  display: none;
-}
-.accordion-container {
+.faq-menu {
   /* faq-menu */
   display: flex;
   flex-wrap: wrap;
@@ -100,27 +97,27 @@
     margin: 0 auto;
     max-width: 367px;
   }
-  .ac {
+  .faq-container .faq-menu .faq-list {
     width: 656px;
-    border-left: none !important;
-    border-right: none !important;
+    border-left: none;
+    border-right: none;
   }
-  .ac-text {
+  .faq-text {
     margin-top: 16px;
   }
-  .accordion-container {
+  .faq-menu {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: nowrap;
   }
-  .ac {
+  .faq-list {
     width: 100%;
   }
   .faq-title {
     margin-right: 78px;
   }
-  .ac-trigger {
+  .faq-button {
     right: 0;
   }
   .faq-section {
@@ -137,16 +134,16 @@
   .faq-title {
     width: 480px;
   }
-  .accordion-container {
+  .faq-menu {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: nowrap;
   }
-  .ac {
+  .faq-container .faq-menu .faq-list {
     width: 656px;
-    border-left: none !important;
-    border-right: none !important;
+    border-left: none;
+    border-right: none;
   }
   .faq-section {
     padding-top: 48px;
@@ -167,32 +164,33 @@
     width: 580px;
   }
 
-  .ac:nth-child(even) .ac-trigger {
+  .faq-list:nth-child(even) .faq-button {
     right: 0px;
   }
-  .ac:nth-child(odd) {
+  .faq-list:nth-child(odd) {
     padding-right: 32px;
   }
-  .ac {
+  .faq-list {
     display: flex;
     align-items: center;
-    align-items: flex-start; /* Зміна напрямку вирівнювання */
+    align-items: flex-start;
     flex-direction: column;
   }
-  .ac:nth-child(even) .ac-panel {
+  .faq-list:nth-child(even) .faq-content-container {
     width: 100%;
   }
-  .ac:nth-child(even) {
+  .faq-list:nth-child(even) {
     padding-left: 32px;
   }
-  .ac:nth-child(odd) {
-    border-left: none !important;
-    border-right: 1px solid rgba(250, 250, 250, 0.2) !important;
+  .faq-container .faq-menu .faq-list:nth-child(odd) {
+    border-left: none;
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
   }
-  .ac:nth-child(even) {
-    border-right: none !important;
+
+  .faq-container .faq-menu .faq-list:nth-child(even) {
+    border-right: none;
   }
-  .accordion-container {
+  .faq-menu {
     justify-content: center;
   }
 }

@@ -1,8 +1,7 @@
 .hero_section {
   background-image: url('../img/Glass_effect/glass_effect_blue_hero.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 60% 100%;
   min-height: 812px;
 }
 

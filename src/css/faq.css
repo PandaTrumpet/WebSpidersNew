@@ -1,7 +1,6 @@
-body {
-  background-color: rgba(28, 29, 32, 1);
+.faq-container {
+  margin: 0 auto;
 }
-
 .faq-title {
   font-size: 20px;
   font-weight: 600;
@@ -10,34 +9,40 @@ body {
   text-align: left;
   color: rgba(250, 250, 250, 1);
 }
-.faq-text {
+
+.ac-text {
+  /*  faq-text */
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.02em;
   text-align: left;
-  color: rgba(250, 250, 250, 0.6);
+  color: rgba(250, 250, 250, 0.6) !important;
+  margin-top: 26px !important;
+  padding: 0 !important;
 }
-.faq-menu {
-  display: flex;
-  flex-wrap: wrap;
+.faq-icon {
+  margin: auto;
+  display: block;
 }
-.faq-list {
+.ac .ac-trigger {
+  padding: 0 !important;
+}
+
+.ac {
+  /* faq-list  */
+  position: relative;
   width: calc((100% - 48px) / 2);
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid rgba(250, 250, 250, 0.2) !important;
   padding-bottom: 32px;
   padding-top: 32px;
-}
-.faq-list:nth-child(odd) {
-  border-left: none; /* Видаляємо ліву рамку у непарних елементів */
-}
-.faq-list:nth-child(even) {
-  border-right: none; /* Видаляємо праву рамку у парних елементів */
-  padding-left: 32px;
+  border-left: none;
+  border-right: none;
+  background-color: rgba(28, 29, 32, 1) !important;
+  margin-top: 0 !important;
 }
 
 .faq-section-title {
-  font-family: Inter Tight;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -46,12 +51,148 @@ body {
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
 }
+.ac .ac-trigger {
+  /* faq-button-down  up*/
+  position: absolute !important;
+  top: 32px; /* Підігнати вертикально відповідно до потреб */
+  right: 32px;
+  border: 1px solid rgba(250, 250, 250, 0.2) !important;
+  background-color: rgba(28, 29, 32, 1) !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  display: flex; /* Встановлюємо flex контейнер */
+  justify-content: center; /* Центруємо вміст по горизонталі */
+  align-items: center;
+  padding: auto !important;
+}
+
+.ac .ac-trigger:hover,
+.ac .ac-trigger:focus {
+  border: 1px solid rgba(250, 250, 250, 1) !important;
+}
+.ac .ac-trigger::after {
+  content: '' !important;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* .faq-icon {
+  transform: rotate(-180deg);
+} */
+
+.faq-button-up {
+  display: none;
+}
+.accordion-container {
+  /* faq-menu */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===================================================MOBILE-STYLES======================================================= */
+
+@media screen and (max-width: 767px) {
+  .faq-container {
+    margin: 0 auto;
+    max-width: 367px;
+  }
+  .ac {
+    width: 656px;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  .ac-text {
+    margin-top: 16px;
+  }
+  .accordion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+  .ac {
+    width: 100%;
+  }
+  .faq-title {
+    margin-right: 78px;
+  }
+  .ac-trigger {
+    right: 0;
+  }
+  .faq-section {
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+}
+/* ===================================================TABLET-STYLES======================================================= */
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .faq-container {
+    margin: 0 auto;
+    max-width: 656px;
+  }
+  .faq-title {
+    width: 480px;
+  }
+  .accordion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+  .ac {
+    width: 656px;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  .faq-section {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+}
+/* ===================================================DECSTOP-STYLES======================================================= */
 @media screen and (min-width: 1440px) {
   .faq-container {
-    min-width: 1440px;
+    margin: 0 auto;
+    width: 1440px;
   }
   .faq-section {
     padding-top: 82px;
-    padding-bottom: 82px;
+    padding-bottom: 164px;
+  }
+  .faq-title {
+    width: 580px;
+  }
+
+  .ac:nth-child(even) .ac-trigger {
+    right: 0px;
+  }
+  .ac:nth-child(odd) {
+    padding-right: 32px;
+  }
+  .ac {
+    display: flex;
+    align-items: center;
+    align-items: flex-start; /* Зміна напрямку вирівнювання */
+    flex-direction: column;
+  }
+  .ac:nth-child(even) .ac-panel {
+    width: 100%;
+  }
+  .ac:nth-child(even) {
+    padding-left: 32px;
+  }
+  .ac:nth-child(odd) {
+    border-left: none !important;
+    border-right: 1px solid rgba(250, 250, 250, 0.2) !important;
+  }
+  .ac:nth-child(even) {
+    border-right: none !important;
+  }
+  .accordion-container {
+    justify-content: center;
   }
 }

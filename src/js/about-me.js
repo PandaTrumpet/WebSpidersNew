@@ -41,25 +41,10 @@ const mySwiper = new Swiper('.about-skills', {
 });
 
 const slides = document.querySelectorAll('.about-skills-list-item');
-slides.forEach(slide => {
-  slide.addEventListener('click', () => {
-    slides.forEach(slide => {
-      slide.classList.remove('active');
-    });
-    slide.classList.add('active');
-  })
-})
-
 const sliderBtn = document.querySelector('.about-skills-arrow');
+
 sliderBtn.addEventListener('click', () => {
   mySwiper.slideNext();
-  mySwiper.on('slideChange', () => {
-    slides.forEach(slide => {
-        slide.classList.remove('active');
-    });
-    const activeSlideIndex = mySwiper.realIndex;
-    slides[activeSlideIndex].classList.add('active');
-  });
 })
 
 document.addEventListener('keydown', (e) => {
@@ -73,6 +58,14 @@ document.addEventListener('keydown', (e) => {
    mySwiper.slidePrev(); 
   }
 });
+
+ mySwiper.on('slideChange', () => {
+    slides.forEach(slide => {
+        slide.classList.remove('active');
+    });
+    const activeSlideIndex = mySwiper.realIndex;
+    slides[activeSlideIndex].classList.add('active');
+  });
 
 // ******* ACCORDION *******
 

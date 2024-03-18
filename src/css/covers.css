@@ -8,7 +8,6 @@
     background-repeat: no-repeat;
     max-width: 375px;
     max-height: 508px;
-    backdrop-filter: blur(-30%);
 }  
 /* Кнопка скрола вгору */
 .btn-top {

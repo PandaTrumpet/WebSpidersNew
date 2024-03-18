@@ -4,7 +4,6 @@
   background-size: cover;
   background-position: center;
   min-height: 812px;
-  position: relative;
 }
 @media screen and (min-resolution: 192dpi) {
   .hero_section {

@@ -167,6 +167,7 @@ button#ac-trigger-2.about-info-list-item-btn.ac-trigger:hover {
 .about-info-list-item.ac .ac-panel .ac-text {
   padding: unset;
   padding-top: 10px;
+  margin: 0 0 0 auto;
 }
 
 .about-info-list-item-text-unit {

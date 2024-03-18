@@ -1,14 +1,13 @@
 .hero_section {
-  background-image: url('../img/hero_background/blue.png');
+  background-image: url('../img/Glass_effect/glass_effect_blue_hero.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 60% 100%;
   min-height: 812px;
-  position: relative;
 }
+
 @media screen and (min-resolution: 192dpi) {
   .hero_section {
-    background-image: url('../img/hero_background/blue@2x.png');
+    background-image: url('../img/Glass_effect/glass_effect_blue_hero@2x.png');
   }
 }
 .title {
@@ -74,15 +73,6 @@
 /*///////////// TABLET STYLES ////////////*/
 
 @media screen and (min-width: 768px) {
-  .container {
-    margin: 0;
-  }
-  .hero_section {
-    background-image: url('../img/hero_background/blue.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
   .title {
     font-size: 90px;
     font-weight: 500;

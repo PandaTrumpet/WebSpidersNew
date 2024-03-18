@@ -1,3 +1,4 @@
+
 const menuBtn = document.querySelector(".menu-button");
 const list = document.querySelector(".menu-list")
 const mobileBtn = document.querySelector(".burger-btn");
@@ -7,7 +8,7 @@ const mobileOrderBtn = document.querySelector(".mobile-order-btn")
 const workSection = document.getElementById('footer-work-together')
 const orderBtn = document.querySelector('.order-btn')
 const mobileList = document.querySelector('.mobile-menu-list')
-const item = document.querySelector(".menu-link")
+// const item = document.querySelector(".menu-link")
 
 mobileBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('visually-hidden');
@@ -21,15 +22,25 @@ mobileOrderBtn.addEventListener('click', () => {
         mobileMenu.classList.add('visually-hidden');
     }
 });
-orderBtn.addEventListener('click', () => {
-    window.location.href = "#footer-work-together"
-})
-menuBtn.addEventListener('click', (event) => {
-    list.classList.toggle('active');
-});
-
 mobileList.addEventListener('click', () => {
     if (mobileList) {
         mobileMenu.classList.add('visually-hidden');
     }
-})
+});
+orderBtn.addEventListener('click', () => {
+    window.location.href = "#footer-work-together"
+});
+menuBtn.addEventListener('click', () => {
+   if (list.style.display === "flex") {
+       list.style.display = "none";
+    } else {
+        list.style.display = "flex";
+    }
+});
+
+const closeMenu = document.querySelectorAll(".close-link")
+closeMenu.forEach(link => {
+    link.addEventListener("click", () => {
+        list.style.display = "none";
+    })
+});

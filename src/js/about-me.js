@@ -1,4 +1,4 @@
-import Swiper from "swiper";
+import Swiper from 'swiper';
 import 'swiper/css';
 
 import Accordion from 'accordion-js';
@@ -24,15 +24,15 @@ const mySwiper = new Swiper('.about-skills', {
     nextEl: '.about-skills-arrow',
   },
   breakpoints: {
-     375: {
-        slidesPerView: 2
-        },
+    375: {
+      slidesPerView: 2,
+    },
     768: {
-        slidesPerView: 3
-        },
+      slidesPerView: 3,
+    },
     1440: {
-        slidesPerView: 6
-         }
+      slidesPerView: 6,
+    },
   },
   effect: 'slide',
   slideToClickedSlide: true,
@@ -41,37 +41,30 @@ const mySwiper = new Swiper('.about-skills', {
 });
 
 const slides = document.querySelectorAll('.about-skills-list-item');
-slides.forEach(slide => {
-  slide.addEventListener('click', () => {
-    slides.forEach(slide => {
-      slide.classList.remove('active');
-    });
-    slide.classList.add('active');
-  })
-})
-
 const sliderBtn = document.querySelector('.about-skills-arrow');
+
 sliderBtn.addEventListener('click', () => {
   mySwiper.slideNext();
-  mySwiper.on('slideChange', () => {
-    slides.forEach(slide => {
-        slide.classList.remove('active');
-    });
-    const activeSlideIndex = mySwiper.realIndex;
-    slides[activeSlideIndex].classList.add('active');
-  });
-})
+});
 
-document.addEventListener('keydown', (e) => {
-   if (e.key === 'Tab') {
+document.addEventListener('keydown', e => {
+  if (e.key === 'Tab') {
     e.preventDefault();
     sliderBtn.focus();
   }
   if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
- mySwiper.slideNext();
+    mySwiper.slideNext();
   } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-   mySwiper.slidePrev(); 
+    mySwiper.slidePrev();
   }
+});
+
+mySwiper.on('slideChange', () => {
+  slides.forEach(slide => {
+    slide.classList.remove('active');
+  });
+  const activeSlideIndex = mySwiper.realIndex;
+  slides[activeSlideIndex].classList.add('active');
 });
 
 // ******* ACCORDION *******
@@ -84,16 +77,17 @@ const accordion = new Accordion('.about-info-list', {
 
 const accordionItems = document.querySelectorAll('.about-info-list-item');
 
-  accordionItems.forEach((item, index) => {
-    const accordionBtn = item.querySelector('.about-info-list-item-btn');
-      const accordionArrow = item.querySelector('.about-info-list-item-btn-down-icon');
+accordionItems.forEach((item, index) => {
+  const accordionBtn = item.querySelector('.about-info-list-item-btn');
+  const accordionArrow = item.querySelector(
+    '.about-info-list-item-btn-down-icon'
+  );
 
-    if (index === 0) {
-        accordionArrow.classList.add('active');
-    }
-    
-    accordionBtn.addEventListener('click', () => {
-        accordionArrow.classList.toggle('active');
-    });
+  if (index === 0) {
+    accordionArrow.classList.add('active');
+  }
+
+  accordionBtn.addEventListener('click', () => {
+    accordionArrow.classList.toggle('active');
   });
-
+});

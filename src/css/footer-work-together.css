@@ -109,6 +109,7 @@
   color: #fafafa;
   font-weight: 500;
   font-size: 16px;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_form_btn:hover {
@@ -133,6 +134,7 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
+  transition: border 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_list_item_mail:hover {
@@ -146,6 +148,7 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer_list_item_numb:hover {
   border: 1px solid #fafafa;
@@ -172,6 +175,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 999;
 }
 
 .footer_modal {

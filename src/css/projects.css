@@ -140,7 +140,7 @@ padding-top: 48px;
 padding-bottom: 48px;
 }
 .container {
-    max-width: 704px;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
     border-radius: 24px;
@@ -362,11 +362,13 @@ padding-left: 32px;
 
 .icon-prev {
     transform: rotate(180deg);
+    stroke: #1C1D20;
 }
 
 .swiper-button-disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }
+
 
 

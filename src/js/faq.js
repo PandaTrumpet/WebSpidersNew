@@ -5,13 +5,13 @@ new Accordion('.faq-container .accordion-container', {
   showMultiple: true,
 });
 document.addEventListener('DOMContentLoaded', function () {
-  const accordionContainer = document.querySelector('.accordion-container');
+  const accordionContainer = document.querySelector('.faq-menu');
 
   if (accordionContainer) {
-    const accordions = accordionContainer.querySelectorAll('.ac');
+    const accordions = accordionContainer.querySelectorAll('.faq-list');
 
     accordions.forEach(accordion => {
-      const triggerButton = accordion.querySelector('.ac-trigger');
+      const triggerButton = accordion.querySelector('.faq-button');
 
       triggerButton.addEventListener('click', function () {
         const isOpen = accordion.classList.contains('is-active');

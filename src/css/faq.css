@@ -10,7 +10,7 @@
   color: rgba(250, 250, 250, 1);
 }
 
-.ac-text {
+.faq-text {
   /*  faq-text */
   font-size: 16px;
   font-weight: 500;
@@ -25,11 +25,11 @@
   margin: auto;
   display: block;
 }
-.ac .ac-trigger {
+.faq-list .faq-button {
   padding: 0 !important;
 }
 
-.ac {
+.faq-list {
   /* faq-list  */
   position: relative;
   width: calc((100% - 48px) / 2);
@@ -51,7 +51,7 @@
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
 }
-.ac .ac-trigger {
+.faq-list .faq-button {
   /* faq-button-down  up*/
   position: absolute !important;
   top: 32px; /* Підігнати вертикально відповідно до потреб */
@@ -67,11 +67,11 @@
   padding: auto !important;
 }
 
-.ac .ac-trigger:hover,
-.ac .ac-trigger:focus {
+.faq-list .faq-button:hover,
+.faq-list .faq-button:focus {
   border: 1px solid rgba(250, 250, 250, 1) !important;
 }
-.ac .ac-trigger::after {
+.faq-list .faq-button::after {
   content: '' !important;
   width: 20px;
   height: 20px;
@@ -83,10 +83,7 @@
   transform: rotate(-180deg);
 } */
 
-.faq-button-up {
-  display: none;
-}
-.accordion-container {
+.faq-menu {
   /* faq-menu */
   display: flex;
   flex-wrap: wrap;
@@ -100,27 +97,27 @@
     margin: 0 auto;
     max-width: 367px;
   }
-  .ac {
+  .faq-list {
     width: 656px;
     border-left: none !important;
     border-right: none !important;
   }
-  .ac-text {
+  .faq-text {
     margin-top: 16px;
   }
-  .accordion-container {
+  .faq-menu {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: nowrap;
   }
-  .ac {
+  .faq-list {
     width: 100%;
   }
   .faq-title {
     margin-right: 78px;
   }
-  .ac-trigger {
+  .faq-button {
     right: 0;
   }
   .faq-section {
@@ -137,13 +134,13 @@
   .faq-title {
     width: 480px;
   }
-  .accordion-container {
+  .faq-menu {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: nowrap;
   }
-  .ac {
+  .faq-list {
     width: 656px;
     border-left: none !important;
     border-right: none !important;
@@ -167,32 +164,32 @@
     width: 580px;
   }
 
-  .ac:nth-child(even) .ac-trigger {
+  .faq-list:nth-child(even) .faq-button {
     right: 0px;
   }
-  .ac:nth-child(odd) {
+  .faq-list:nth-child(odd) {
     padding-right: 32px;
   }
-  .ac {
+  .faq-list {
     display: flex;
     align-items: center;
     align-items: flex-start; /* Зміна напрямку вирівнювання */
     flex-direction: column;
   }
-  .ac:nth-child(even) .ac-panel {
+  .faq-list:nth-child(even) .faq-content-container {
     width: 100%;
   }
-  .ac:nth-child(even) {
+  .faq-list:nth-child(even) {
     padding-left: 32px;
   }
-  .ac:nth-child(odd) {
+  .faq-list:nth-child(odd) {
     border-left: none !important;
     border-right: 1px solid rgba(250, 250, 250, 0.2) !important;
   }
-  .ac:nth-child(even) {
+  .faq-list:nth-child(even) {
     border-right: none !important;
   }
-  .accordion-container {
+  .faq-menu {
     justify-content: center;
   }
 }

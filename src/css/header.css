@@ -21,16 +21,20 @@
     background-color: transparent;
     position: absolute;
     padding-top: 32px;
-     top: 0;
-     left: 0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 .header-navigation{
     display: flex;
     gap: 8px;
     /* padding-right: 150px; */
 }
-.menu-list {
+.menu-list{
     display: none;
+}
+.menu-link{
+    display:none;
 }
 .order-btn {
     display: none;
@@ -202,8 +206,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 .menu-list {
                     display: none;
                     position: fixed;
-                    top: 13%;
-                    left: -4%;
+                    top: 50%;
+                    left: 0%; 
                     width: 100%; 
                     height: 100%;
                     color: #FFFFFF;
@@ -212,12 +216,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                     flex-direction: column;
                     gap: 12px;
                     align-items: center;
-                    
                 }
                 .menu-list.active {
             display: flex;
             background-color: inherit;
-                }       
+                }   
+                .menu-link{
+                    display: flex;
+                }    
 }
 /****************************** Desktop Style******************/
 @media screen and (min-width: 1440px) {
@@ -229,7 +235,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 470px;
 }
 .menu-list{
-    top: 13%;
-    left: -2.5%;
+    top: 40%;
 }
 }

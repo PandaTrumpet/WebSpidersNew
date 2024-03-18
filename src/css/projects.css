@@ -362,11 +362,13 @@ padding-left: 32px;
 
 .icon-prev {
     transform: rotate(180deg);
+    stroke: #1C1D20;
 }
 
 .swiper-button-disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }
+
 
 

@@ -95,11 +95,11 @@
 
 .icon-prev {
   transform: rotate(180deg);
-  stroke: #FAFAFA;
+  stroke: #fafafa;
 }
 
 .icon-next {
-  stroke: #FAFAFA;
+  stroke: #fafafa;
 }
 
 .swiper-button-dis {

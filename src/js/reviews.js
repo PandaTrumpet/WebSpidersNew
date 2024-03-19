@@ -44,86 +44,63 @@ document.addEventListener('DOMContentLoaded', async function renderEvent() {
   try {
     const reviewsData = await fetchData();
     renderSlides(reviewsData);
-    initSwiper();
   } catch (error) {
     console.error('Error rendering reviews:', error);
   }
 });
 
-function initSwiper() {
-  const swiper = new Swiper('.swiper-container', {
-    direction: 'horizontal',
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-      pageUpDown: true,
+const reviewsSwiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  mousewheel: {
+    enabled: true,
+    sensitivity: 1,
+    onlyInViewport: true,
+    eventsTarget: '.swiper-container',
+  },
+  navigation: {
+    nextEl: '#next_btn',
+    prevEl: '#before_btn',
+    clickable: true,
+  },
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
     },
-    mousewheel: {
-      enabled: true,
-      sensitivity: 1,
-      onlyInViewport: true,
-      eventsTarget: '.swiper',
+    768: {
+      slidesPerView: 2,
     },
-    navigation: {
-      nextEl: '#next_btn',
-      prevEl: '#before_btn',
-      clickable: true,
+    1440: {
+      slidesPerView: 4,
     },
-    breakpoints: {
-      375: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1440: {
-        slidesPerView: 4,
-      },
-    },
-    effect: 'slide',
-    slideToClickedSlide: true,
-    touchRatio: 3,
-    allowTouchMove: true,
-  });
+  },
+  effect: 'slide',
+  slideToClickedSlide: true,
+  touchRatio: 3,
+  allowTouchMove: true,
+});
 
-  const sliderNext = document.querySelector('#next_btn');
-  const sliderPrev = document.querySelector('#before_btn');
+const sliderNext = document.getElementById('next_btn');
+const sliderPrev = document.getElementById('before_btn');
 
-  function updateNavButtons() {
-    if (swiper.isBeginning) {
-      sliderPrev.classList.add('swiper-button-dis');
-      sliderPrev.disabled = true;
-    } else {
-      sliderPrev.classList.remove('swiper-button-dis');
-      sliderPrev.disabled = false;
-    }
-
-    if (swiper.isEnd) {
-      sliderNext.classList.add('swiper-button-dis');
-      sliderNext.disabled = true;
-    } else {
-      sliderNext.classList.remove('swiper-button-dis');
-      sliderNext.disabled = false;
-    }
+function updateNavButtons() {
+  if (swiper.isBeginning) {
+    sliderPrev.classList.add('swiper-button-dis');
+    sliderPrev.disabled = true;
+  } else {
+    sliderPrev.classList.remove('swiper-button-dis');
+    sliderPrev.disabled = false;
   }
 
-  swiper.on('slideChange', updateNavButtons);
-
-  sliderNext.addEventListener('click', () => {
-    swiper.slideNext(500);
-  });
-
-  sliderPrev.addEventListener('click', () => {
-    swiper.slidePrev(500);
-  });
-
-  updateNavButtons();
-
-  document.addEventListener('keydown', e => {
-    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-      swiper.slideNext();
-    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-      swiper.slidePrev();
-    }
-  });
+  if (swiper.isEnd) {
+    sliderNext.classList.add('swiper-button-dis');
+    sliderNext.disabled = true;
+  } else {
+    sliderNext.classList.remove('swiper-button-dis');
+    sliderNext.disabled = false;
+  }
 }

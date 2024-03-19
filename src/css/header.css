@@ -77,7 +77,7 @@
 }
 .mobile-container {
   display: flex;
-  /* position: relative; */
+  position: relative;
   height: 100%;
   width: 375px;
   flex-direction: column;

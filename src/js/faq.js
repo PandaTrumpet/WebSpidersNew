@@ -13,22 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     accordions.forEach(accordion => {
       const triggerButton = accordion.querySelector('.faq-button');
+      const faqIcon = accordion.querySelector('.faq-icon');
 
       triggerButton.addEventListener('click', function () {
         const isOpen = accordion.classList.contains('is-active');
 
         if (isOpen) {
-          triggerButton.innerHTML = `
-          <svg class="faq-icon" width="20" height="20">
-            <use href="./img/icon.svg#icon-accordion_up"></use>
-          </svg>
-        `;
+          faqIcon.classList.add('rotate');
         } else {
-          triggerButton.innerHTML = `
-          <svg class="faq-icon" width="20" height="20">
-            <use href="./img/icon.svg#icon-accordion_down"></use>
-          </svg>
-        `;
+          faqIcon.classList.remove('rotate');
         }
       });
     });

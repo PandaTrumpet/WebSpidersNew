@@ -1,0 +1,165 @@
+#covers{
+   padding-bottom: 32px; 
+}  
+.covers-sect{
+  margin: 0 auto;
+  background-color: rgba(217, 217, 217, 0.04);
+  background-image: url(../img/covers_elements/element1_blue.png), url(../img/covers_elements/element2_blue.png), url(../img/covers_elements/element2_blue.png);
+  background-position: -20% -12%, 50% 120%, 120% 20% ;
+background-size: 60% ;
+  background-repeat: no-repeat;
+  max-width: 375px;
+  max-height: 508px;
+}
+/* Кнопка скрола вгору */
+.btn-top {
+    position: fixed;
+    bottom: 3vh;
+    right: 1vh;
+    z-index: 1000;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .btn-top--visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* Кнопка скрола вгору */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  .content {
+    position: relative;
+    width: 375px;
+    height: 508px;
+    overflow: hidden;
+  }
+  .marquee {
+    position: absolute;
+    top: -50%;
+    right: -90%;
+    font-family: "Pridi", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    text-transform: uppercase;
+  }
+  
+  .marquee__inner {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transform: rotate(16deg);   
+  }
+  .marquee_6{
+    justify-content: end;
+  }
+  .marquee_9{
+    justify-content: start;
+    row-gap: 20px;
+  }
+  .marquee__line {
+    width: 283px;
+    height: 163px;
+  
+    margin: 25px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-duration: 3s, 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  }
+
+  @keyframes marqueeLineLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes marqueeLineRight {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(50%);
+    }
+  }
+  @media screen and (max-width: 767px) and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .covers-sect {
+        background-image: url(../img/covers_elements/element1_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png);
+      }
+  }
+
+  @media screen and (min-width: 768px){
+    #covers{
+    padding-bottom: 48px;
+      }
+      
+      .covers-sect{
+        max-width: 768px;
+      max-height: 960px;
+      background-position: 0% 0%, 100% -30%, 25% 70% ;
+      background-size: 50%;
+      }
+    .content {
+      width: 768px;
+      height: 960px;
+    }
+    .marquee{
+      top: -40%;
+      right: -90%;
+    }
+    .marquee__line {
+      width: 544px;
+      height: 314px;
+      margin: 40px 50px 0 0;
+    }
+  }
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .covers-sect {
+    background-image: url(../img/covers_elements/element1_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png);
+  }
+}
+
+  @media screen and (min-width: 1440px) {
+    #covers{
+      padding-bottom: 82px;
+    }
+    .covers-sect{
+      max-width: 1440px;
+      background-position: -50% -50%, 130% 15%, 0% 150% ;
+      background-size: 50%;
+    }
+    .content {
+      width: 1440px;
+    }
+    .marquee{
+      top: -55%;
+      right: -13%;
+    }
+    .marquee__line {
+      margin: 60px 50px 0 0;
+    }
+      }
+      @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+      screen and (min-resolution: 2dppx) and (min-width: 1440px),
+      screen and (min-device-pixel-ratio: 2) and (min-width: 1400px) {
+     
+        .covers-sect {
+      background-image: url(../img/covers_elements/element1_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png), url(../img/covers_elements/element2_blue@2x.png);
+        }
+      }

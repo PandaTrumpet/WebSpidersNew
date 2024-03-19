@@ -123,9 +123,7 @@
     padding-right: 32px;
     }
 
-
 }
-
 
 
 
@@ -265,7 +263,6 @@ padding-left: 32px;
     color: rgba(250, 250, 250, 0.4);
 }
 
-
   .btn-flex {
       display: flex;
       gap: 20px;
@@ -364,5 +361,6 @@ padding-left: 32px;
     background-color: #ccc;
     cursor: not-allowed;
 }
+
 
 

@@ -1,6 +1,9 @@
 .benefits_section {
   padding-top: 32px;
   padding-bottom: 32px;
+  margin: 0;
+  
+  
 }
 
 .benefits_title {
@@ -73,7 +76,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 704px;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -93,9 +96,7 @@
     flex-wrap: wrap;
     gap: 16px 16px;
   }
-  .benefits_item {
-    width: 344px;
-  }
+ 
 }
 
 /* ===================================================TABLET-STYLES======================================================= */
@@ -104,7 +105,7 @@
 
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1376px;
+    max-width: 1440px;
   }
 
   .benefits_section {

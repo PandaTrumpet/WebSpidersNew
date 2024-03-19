@@ -13,6 +13,7 @@ const mySwiper = new Swiper('.about-skills', {
   allowTouchMove: true,
   slidesPerView: 'auto',
   direction: 'horizontal',
+  grabCursor: true,
   loop: true,
   keyboard: {
     enabled: true,
@@ -37,6 +38,7 @@ const mySwiper = new Swiper('.about-skills', {
 });
 
 const slides = document.querySelectorAll('.about-skills-list-item');
+const sliderBtn = document.querySelector('.about-skills-arrow');
 
 mySwiper.on('slideChange', () => {
   slides.forEach(slide => {
@@ -50,11 +52,6 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Tab') {
     e.preventDefault();
     sliderBtn.focus();
-  }
-  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-    mySwiper.slideNext();
-  } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-    mySwiper.slidePrev();
   }
 });
 

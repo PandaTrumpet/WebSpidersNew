@@ -8,7 +8,6 @@
   background-position: -20% -12%, 50% 120%, 120% 20% ;
 background-size: 60% ;
   background-repeat: no-repeat;
-  max-width: 375px;
   max-height: 508px;
 }
 /* Кнопка скрола вгору */
@@ -36,14 +35,13 @@ background-size: 60% ;
 
   .content {
     position: relative;
-    width: 375px;
     height: 508px;
     overflow: hidden;
   }
   .marquee {
     position: absolute;
     top: -50%;
-    right: -90%;
+    left: -100%;
     font-family: "Pridi", sans-serif;
     font-weight: 600;
     font-size: 34px;
@@ -54,7 +52,7 @@ background-size: 60% ;
      display: flex;
      align-items: center;
      justify-content: center;
-     transform: rotate(16deg);   
+     transform: rotate(14deg);   
   }
   .marquee_6{
     justify-content: end;
@@ -71,7 +69,7 @@ background-size: 60% ;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation-duration: 3s, 3s;
+  animation-duration: 5s, 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -108,18 +106,16 @@ background-size: 60% ;
       }
       
       .covers-sect{
-        max-width: 768px;
       max-height: 960px;
       background-position: 0% 0%, 100% -30%, 25% 70% ;
       background-size: 50%;
       }
     .content {
-      width: 768px;
       height: 960px;
     }
     .marquee{
-      top: -40%;
-      right: -90%;
+    top: -50%;
+    left: -70%;
     }
     .marquee__line {
       width: 544px;
@@ -138,18 +134,17 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   @media screen and (min-width: 1440px) {
     #covers{
       padding-bottom: 82px;
+    
     }
     .covers-sect{
-      max-width: 1440px;
+     
       background-position: -50% -50%, 130% 15%, 0% 150% ;
       background-size: 50%;
     }
-    .content {
-      width: 1440px;
-    }
+
     .marquee{
-      top: -55%;
-      right: -13%;
+      top: -50%;
+      left: -15%;
     }
     .marquee__line {
       margin: 60px 50px 0 0;

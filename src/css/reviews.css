@@ -90,7 +90,7 @@
 
 #before_btn::after {
   content: '';
-  background-image: url('./img/icon.svg#icon-swiper_right_icon');
+  background-image: url('../img/icon.svg#icon-swiper_right_icon');
 }
 
 .icon-prev {

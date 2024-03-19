@@ -10,7 +10,6 @@
     margin: 0 auto;
 }
 .projects-title{
-    font-family: "Inter Tight", sans-serif;
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 32px;
@@ -58,7 +57,6 @@
     }
 
     .text-skills {
-        font-family: "Inter Tight", sans-serif;
         font-weight: 500;
         font-size: 16px;
         letter-spacing: -0.02em;
@@ -66,7 +64,6 @@
     }
 
     .text-card {
-        font-family: "Inter Tight", sans-serif;
         font-weight: 500;
         font-size: 24px;
         width: 279px;
@@ -97,7 +94,6 @@
     }
 
     .text-button {
-        font-family: "Inter Tight", sans-serif;
         font-weight: 500;
         font-size: 16px;
         letter-spacing: -0.02em;
@@ -147,7 +143,6 @@ padding-bottom: 48px;
 }
 
 .projects-title {
-    font-family: "Inter Tight", sans-serif;
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 32px;
@@ -191,7 +186,6 @@ padding-bottom: 64px;
 }
 
 .text-skills {
-    font-family: "Inter Tight", sans-serif;
         font-weight: 500;
         font-size: 16px;
         letter-spacing: -0.02em;
@@ -199,7 +193,6 @@ padding-bottom: 64px;
 }
 
 .text-card {
-    font-family: "Inter Tight", sans-serif;
         font-weight: 500;
         font-size: 44px;
         width: 494px;
@@ -229,7 +222,6 @@ border: 1px solid #0041e8;
 }
 
 .text-button {
-    font-family: "Inter Tight", sans-serif;
         font-weight: 500;
         font-size: 16px;
         letter-spacing: -0.02em;
@@ -263,7 +255,6 @@ padding-left: 32px;
     }
 
 .projects-title {
-    font-family: "Inter Tight", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px; 

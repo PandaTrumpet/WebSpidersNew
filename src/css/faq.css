@@ -71,13 +71,16 @@
   border: 1px solid rgba(250, 250, 250, 1);
 }
 .faq-container .faq-menu .faq-list .faq-button::after {
-  content: '';
+  content: url('../img/icon.svg#icon-accordion_down');
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.faq-icon.rotate {
+  transform: rotate(180deg);
+}
 /* .faq-icon {
   transform: rotate(-180deg);
 } */
@@ -128,7 +131,7 @@
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .faq-container {
     margin: 0 auto;
-    max-width: 656px;
+    width: 704px;
   }
   .faq-title {
     width: 480px;
@@ -156,7 +159,7 @@
 @media screen and (min-width: 1440px) {
   .faq-container {
     margin: 0 auto;
-    width: 1440px;
+    min-width: 1440px;
   }
   .faq-section {
     padding-top: 82px;
@@ -166,7 +169,7 @@
     width: 580px;
   }
   .faq-container .faq-menu .faq-list:nth-child(odd) .faq-button {
-    right: 32px; /* Ваше оновлене значення */
+    right: 32px;
   }
 
   .faq-list:nth-child(even) .faq-button {

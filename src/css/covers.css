@@ -27,12 +27,6 @@ background-size: 60% ;
     visibility: visible;
   }
   /* Кнопка скрола вгору */
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
   .content {
     position: relative;
     height: 508px;

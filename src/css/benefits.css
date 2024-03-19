@@ -2,8 +2,6 @@
   padding-top: 32px;
   padding-bottom: 32px;
   margin: 0;
-  
-  
 }
 
 .benefits_title {
@@ -64,12 +62,13 @@
   width: 187px;
   background-color: #1c1d20;
   margin-top: 32px;
-  transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, border-color 300ms ease-in-out;
 }
 
-.benefits_btn:hover {
+.benefits_btn:hover,
+.benefits_btn:focus {
   transform: scale(1.1);
-  background-color: #242527;
+  border-color: #0041e8;
 }
 
 /* ===================================================TABLET-STYLES======================================================= */
@@ -96,7 +95,6 @@
     flex-wrap: wrap;
     gap: 16px 16px;
   }
- 
 }
 
 /* ===================================================TABLET-STYLES======================================================= */

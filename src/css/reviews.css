@@ -76,6 +76,12 @@
   width: 52px;
   height: 52px;
   background-color: #1c1d20;
+  transition: transform 250ms ease;
+}
+
+#next_btn:hover,
+#before_btn:hover {
+  transform: scale(1.1);
 }
 
 .btn-prev,

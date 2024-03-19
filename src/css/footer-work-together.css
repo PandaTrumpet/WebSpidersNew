@@ -82,13 +82,22 @@
   font-size: 16px;
   line-height: 150%;
   color: rgba(250, 250, 250, 0.6);
+  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label_email {
   margin-top: 16px;
 }
-.footer_form_input:hover {
+.footer_form_input:hover,
+.footer_form_input:focus {
   border-bottom: 1px solid #fafafa;
+}
+.footer_form_input:focus {
+  border: 1px solid #0041e8;
+  outline-offset: 5px;
+  outline: transparent;
+  border-radius: 5px;
 }
 
 .green_border {
@@ -109,11 +118,14 @@
   color: #fafafa;
   font-weight: 500;
   font-size: 16px;
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer_form_btn:hover {
+.footer_form_btn:hover,
+.footer_form_btn:focus {
   background-color: #1151f1;
+  transform: scale(1.05);
 }
 
 .footer_list {
@@ -134,11 +146,13 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
-  transition: border 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_list_item_mail:hover {
-  border: 1px solid #fafafa;
+  border: 1px solid #0041e8;
+  transform: scale(1.1);
 }
 .footer_list_item_numb {
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -148,10 +162,12 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
-  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer_list_item_numb:hover {
-  border: 1px solid #fafafa;
+  border: 1px solid #0041e8;
+  transform: scale(1.1);
 }
 
 /* Modal */

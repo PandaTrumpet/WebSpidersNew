@@ -72,4 +72,3 @@ accordionItems.forEach((item, index) => {
     accordionArrow.classList.toggle('active');
   });
 });
-

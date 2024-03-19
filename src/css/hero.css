@@ -39,6 +39,11 @@
   margin: 0;
   height: 37px;
   width: 37px;
+  transition: transform 300ms ease;
+}
+.social_list_item:hover,
+.social_list_item:focus {
+  transform: scale(1.1);
 }
 .social_list_item:last-child {
   width: 178px;

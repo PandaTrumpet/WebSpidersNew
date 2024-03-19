@@ -1,9 +1,3 @@
-// import 'swiper/css';
-// import Swiper from 'swiper';
-// import { Navigation, Pagination } from 'swiper/modules';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-
 async function fetchData() {
   try {
     const response = await fetch(

@@ -48,12 +48,7 @@ footerForm.addEventListener(`submit`, event => {
     email: formData.get('email'),
     comment: formData.get('comments'),
   };
-  //   const inputTrim = footerInputEmail.value.trim();
-  //   if (inputTrim === ``) {
-  //     event.preventDefault();
-  //     footerForm.reset();
-  //     return;
-  //   }
+
   event.preventDefault();
 
   postData(data)

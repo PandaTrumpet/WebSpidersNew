@@ -325,8 +325,13 @@
   width: 52px;
   height: 52px;
   background-color: #1c1d20;
+  transition: transform 250ms ease;
 }
 
+#nxt_btn:hover,
+#bfr_btn:hover {
+  transform: scale(1.1);
+}
 .btn-p,
 .btn-n {
   position: absolute;

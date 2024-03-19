@@ -1,25 +1,27 @@
-document.addEventListener('scroll', function() {
-    const coversSection = document.getElementById('covers');
-    const coversSectionRect = coversSection.getBoundingClientRect();
-    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-    const coversTopIsVisible = coversSectionRect.top >= 0 && coversSectionRect.top < viewportHeight;
-    const coversBottomIsVisible = coversSectionRect.bottom > 0 && coversSectionRect.bottom < viewportHeight;
+document.addEventListener('scroll', function () {
+  const coversSection = document.getElementById('covers');
+  const coversSectionRect = coversSection.getBoundingClientRect();
+  const viewportHeight =
+    window.innerHeight || document.documentElement.clientHeight;
+  const coversTopIsVisible =
+    coversSectionRect.top >= 0 && coversSectionRect.top < viewportHeight;
+  const coversBottomIsVisible =
+    coversSectionRect.bottom > 0 && coversSectionRect.bottom < viewportHeight;
 
-    if (coversTopIsVisible || coversBottomIsVisible) {
-        const marqueeLines = document.querySelectorAll('.marquee__line');
-        marqueeLines.forEach(function(line, index) {
-            if (index % 1 === 0) {
-                line.style.animationName = 'marqueeLineLeft';
-                line.style.animationName = 'marqueeLineRight';
-            }
-        });
-    } else {
-        const marqueeLines = document.querySelectorAll('.marquee__line');
-        marqueeLines.forEach(function(line) {
-            line.style.animationName = 'none';
-        });
-    }
-    
+  if (coversTopIsVisible || coversBottomIsVisible) {
+    const marqueeLines = document.querySelectorAll('.marquee__line');
+    marqueeLines.forEach(function (line, index) {
+      if (index % 1 === 0) {
+        line.style.animationName = 'marqueeLineLeft';
+        line.style.animationName = 'marqueeLineRight';
+      }
+    });
+  } else {
+    const marqueeLines = document.querySelectorAll('.marquee__line');
+    marqueeLines.forEach(function (line) {
+      line.style.animationName = 'none';
+    });
+  }
 });
 
 // кнопка скрола вгору

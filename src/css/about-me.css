@@ -230,6 +230,8 @@ button#ac-trigger-2.about-info-list-item-btn.ac-trigger:hover {
   line-height: 0;
   width: 28px;
   height: 28px;
+  outline: 0 none;
+  border: none;
 }
 
 .about-skills-arrow-icon {

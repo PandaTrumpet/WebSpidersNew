@@ -1,27 +1,27 @@
-// import Swiper from 'swiper';
-// import 'swiper/css';
-
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 // ******* SWIPER *******
 
 const mySwiper = new Swiper('.about-skills', {
+  navigation: {
+    nextEl: '.about-skills-arrow',
+  },
+  effect: 'slide',
+  slideToClickedSlide: true,
+  touchRatio: 3,
+  allowTouchMove: true,
   slidesPerView: 'auto',
   direction: 'horizontal',
   loop: true,
   keyboard: {
     enabled: true,
     onlyInViewport: true,
-    pageUpDown: true,
   },
   mousewheel: {
     enabled: true,
     sensitivity: 1,
     eventsTarget: '.about-skills',
-  },
-  navigation: {
-    nextEl: '.about-skills-arrow',
   },
   breakpoints: {
     375: {
@@ -34,17 +34,16 @@ const mySwiper = new Swiper('.about-skills', {
       slidesPerView: 6,
     },
   },
-  effect: 'slide',
-  slideToClickedSlide: true,
-  touchRatio: 3,
-  allowTouchMove: true,
 });
 
 const slides = document.querySelectorAll('.about-skills-list-item');
-const sliderBtn = document.querySelector('.about-skills-arrow');
 
-sliderBtn.addEventListener('click', () => {
-  mySwiper.slideNext();
+mySwiper.on('slideChange', () => {
+  slides.forEach(slide => {
+    slide.classList.remove('active');
+  });
+  const activeSlideIndex = mySwiper.realIndex;
+  slides[activeSlideIndex].classList.add('active');
 });
 
 document.addEventListener('keydown', e => {
@@ -57,14 +56,6 @@ document.addEventListener('keydown', e => {
   } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
     mySwiper.slidePrev();
   }
-});
-
-mySwiper.on('slideChange', () => {
-  slides.forEach(slide => {
-    slide.classList.remove('active');
-  });
-  const activeSlideIndex = mySwiper.realIndex;
-  slides[activeSlideIndex].classList.add('active');
 });
 
 // ******* ACCORDION *******
@@ -91,3 +82,4 @@ accordionItems.forEach((item, index) => {
     accordionArrow.classList.toggle('active');
   });
 });
+

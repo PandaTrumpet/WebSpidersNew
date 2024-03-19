@@ -48,13 +48,6 @@ mySwiper.on('slideChange', () => {
   slides[activeSlideIndex].classList.add('active');
 });
 
-document.addEventListener('keydown', e => {
-  if (e.key === 'Tab') {
-    e.preventDefault();
-    sliderBtn.focus();
-  }
-});
-
 // ******* ACCORDION *******
 
 const accordion = new Accordion('.about-info-list', {

@@ -15,7 +15,11 @@ const swiperProject = new Swiper('.main-swiper-container', {
     prevEl: '.btn-p',
     clickable: true,
   },
-  effect: 'slide',
+  effect: 'flip',
+  flipEffect: {
+    slideShows: true,
+    limitRotation: true,
+  },
   slideToClickedSlide: true,
   touchRatio: 3,
   allowTouchMove: true,

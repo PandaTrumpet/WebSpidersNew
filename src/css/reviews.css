@@ -1,7 +1,6 @@
 #reviews {
   padding-top: 32px;
   padding-bottom: 32px;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -90,13 +89,9 @@
   background-color: transparent;
 }
 
-#next_btn::after {
+#before_btn::after, #next_btn::after {
   content: '';
-}
-
-#before_btn::after {
-  content: '';
-  background-image: url('../img/icon.svg#icon-swiper_right_icon');
+  /* background-image: url('../img/icon.svg#icon-swiper_right_icon'); */
 }
 
 .icon-prev {

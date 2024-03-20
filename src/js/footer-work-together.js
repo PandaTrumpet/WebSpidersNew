@@ -27,17 +27,15 @@ footerInputEmail.addEventListener('blur', function () {
   } else if (!footerInputEmail.validity.valid) {
     invalid.classList.remove('hidden');
     footerInputEmail.classList.add('red_border');
-    setTimeout(function () {
-      invalid.classList.add('hidden');
-      footerInputEmail.classList.remove('red_border');
-    }, 1000);
   } else if (footerInputEmail.validity.valid) {
+    footerInputEmail.classList.remove('red_border');
+    invalid.classList.add('hidden');
     succes.classList.remove('hidden');
     footerInputEmail.classList.add('green_border');
     setTimeout(function () {
       succes.classList.add('hidden');
       footerInputEmail.classList.remove('green_border');
-    }, 1000);
+    }, 1500);
   }
 });
 

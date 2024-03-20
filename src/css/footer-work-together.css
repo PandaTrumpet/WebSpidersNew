@@ -152,7 +152,7 @@
   letter-spacing: -0.02em;
 }
 .footer_list_item_mail:hover {
-  border: 1px solid #0041e8;
+  border: 1px solid #fafafa;
   transform: scale(1.1);
 }
 .footer_list_item_numb {
@@ -164,7 +164,7 @@
     transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer_list_item_numb:hover {
-  border: 1px solid #0041e8;
+  border: 1px solid #fafafa;
   transform: scale(1.1);
 }
 

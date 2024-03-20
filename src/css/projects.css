@@ -387,6 +387,7 @@
   outline: 0 none;
   border: none;
   cursor: pointer;
+  outline: 0 none;
 }
 
 #nxt_btn::after {
@@ -404,4 +405,10 @@
 .swiper-button-disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+
+#nxt_btn:hover,
+#bfr_btn:hover {
+  transform: scale(1.1);
 }

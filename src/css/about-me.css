@@ -262,7 +262,7 @@ button#ac-trigger-2.about-info-list-item-btn.ac-trigger:hover {
 
 @media screen and (min-width: 768px) {
   .about {
-    padding-bottom: 64px;
+    padding-bottom: 48px;
     padding-top: 64px;
   }
 
@@ -344,7 +344,7 @@ button#ac-trigger-2.about-info-list-item-btn.ac-trigger:hover {
 @media screen and (min-width: 1440px) {
   .about {
     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-bottom: 82px;
   }
 
   .about .container {

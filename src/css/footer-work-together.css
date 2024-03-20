@@ -1,5 +1,8 @@
 /* Mobile */
-
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .status {
   height: 16px;
 }
@@ -22,7 +25,7 @@
 }
 
 .footer_main {
-  margin-top: 32px;
+  /* margin-top: 32px; */
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
@@ -133,7 +136,7 @@
   gap: 4px;
   width: 304px;
   height: 37px;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .footer_list_item_mail {
@@ -251,6 +254,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 169px;
+  }
   .footer_modal {
     padding: 64px;
     width: 500px;
@@ -292,7 +299,7 @@
   }
   .footer_list {
     gap: 8px;
-    margin-bottom: 169px;
+    /* margin-bottom: 169px; */
     height: 55px;
   }
   .footer_list_item_mail {
@@ -311,6 +318,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .footer {
+    padding-top: 82px;
+  }
   .footer_main {
     padding-left: 164px;
     max-width: 600px;

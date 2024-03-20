@@ -1,6 +1,6 @@
 #reviews {
-  padding-top: 82px;
-  padding-bottom: 82px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -112,4 +112,17 @@
   opacity: 0.5;
   pointer-events: none;
   cursor: not-allowed;
+}
+
+@media screen and (min-width: 768px) {
+  #reviews {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #reviews {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
 }
